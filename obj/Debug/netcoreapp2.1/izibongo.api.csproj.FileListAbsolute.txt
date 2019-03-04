@@ -1,0 +1,14 @@
+C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1\izibongo.api.deps.json
+C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1\izibongo.api.runtimeconfig.json
+C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1\izibongo.api.runtimeconfig.dev.json
+C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1\izibongo.api.dll
+C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1\izibongo.api.pdb
+C:\Users\User\source\vscode-repos\izibongo.api\obj\Debug\netcoreapp2.1\izibongo.api.csprojAssemblyReference.cache
+C:\Users\User\source\vscode-repos\izibongo.api\obj\Debug\netcoreapp2.1\izibongo.api.csproj.CoreCompileInputs.cache
+C:\Users\User\source\vscode-repos\izibongo.api\obj\Debug\netcoreapp2.1\izibongo.api.RazorAssemblyInfo.cache
+C:\Users\User\source\vscode-repos\izibongo.api\obj\Debug\netcoreapp2.1\izibongo.api.RazorAssemblyInfo.cs
+C:\Users\User\source\vscode-repos\izibongo.api\obj\Debug\netcoreapp2.1\izibongo.api.AssemblyInfoInputs.cache
+C:\Users\User\source\vscode-repos\izibongo.api\obj\Debug\netcoreapp2.1\izibongo.api.AssemblyInfo.cs
+C:\Users\User\source\vscode-repos\izibongo.api\obj\Debug\netcoreapp2.1\izibongo.api.RazorTargetAssemblyInfo.cache
+C:\Users\User\source\vscode-repos\izibongo.api\obj\Debug\netcoreapp2.1\izibongo.api.dll
+C:\Users\User\source\vscode-repos\izibongo.api\obj\Debug\netcoreapp2.1\izibongo.api.pdb
