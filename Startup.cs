@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using izibongo.api.API.ServiceExtensions;
 using izibongo.api.DAL.DbContext;
 using Microsoft.AspNetCore.Builder;
@@ -39,6 +40,7 @@ namespace izibongo.api
             services.ConfigureUserIdentity();
             services.ConfigureRepositoryWrapper();
             services.AddTransient<DbInitializer>();
+            services.AddAutoMapper();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
