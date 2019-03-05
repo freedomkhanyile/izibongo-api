@@ -39,6 +39,8 @@ namespace izibongo.api
             services.ConfigurSQLServerContext();
             services.ConfigureUserIdentity();
             services.ConfigureRepositoryWrapper();
+            services.ConfigurActionContextAccessor();
+            services.ConfigureUrlHelper();
             services.AddTransient<DbInitializer>();
             services.AddAutoMapper();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);

@@ -2,7 +2,7 @@ using System;
 
 namespace izibongo.api.DAL.Models
 {
-    public class FamilyModel
+    public class FamilyModel : LinkedResourceBaseModel
     {
         public Guid Id  { get; set; }
         public string FamilyName { get; set; }

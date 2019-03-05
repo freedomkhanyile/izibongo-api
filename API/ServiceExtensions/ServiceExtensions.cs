@@ -4,6 +4,9 @@ using izibongo.api.DAL.Entities;
 using izibongo.api.DAL.Repository.RepositoryWrapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace izibongo.api.API.ServiceExtensions
@@ -46,6 +49,21 @@ namespace izibongo.api.API.ServiceExtensions
         public static void ConfigureRepositoryWrapper(this IServiceCollection services)
         {
             services.AddTransient<IRepositoryWrapper, RepositoryWrapper>();
+        }
+
+         public static void ConfigurActionContextAccessor(this IServiceCollection services)
+        {
+            services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
+        }
+
+       public static void ConfigureUrlHelper(this IServiceCollection services)
+        {
+            services.AddScoped<IUrlHelper>(factory =>
+            {
+                var actionContext = factory.GetService<IActionContextAccessor>()
+                                           .ActionContext;
+                return new UrlHelper(actionContext);
+            });
         }
     }
 }
