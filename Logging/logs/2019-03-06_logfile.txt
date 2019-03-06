@@ -2,3 +2,6 @@
 2019-03-06 10:28:20.6522 DEBUG Here is debug message from our values controller.
 2019-03-06 10:28:20.6522 WARN Here is warn message from our values controller.
 2019-03-06 10:28:20.6663 ERROR Here is error message from our values controller.
+2019-03-06 11:08:32.9800 INFO Username adminIzibongo, was successfully authenticated
+2019-03-06 11:08:42.0089 ERROR Username adminIzibongo, was not successully authenticated at 2019/03/06 11:08:42 AM
+2019-03-06 11:08:47.9978 INFO Username adminIzibongo, was successfully authenticated
