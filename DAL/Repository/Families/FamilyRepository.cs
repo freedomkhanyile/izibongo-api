@@ -12,7 +12,7 @@ namespace izibongo.api.DAL.Repository.Families
     public class FamilyRepository
             : RepositoryBase<Family>, IFamilyRepository
     {
-        public FamilyRepository(RepositoryContext repositoryContext) 
+        public FamilyRepository(RepositoryContext repositoryContext)
             : base(repositoryContext)
         {
 
@@ -26,12 +26,18 @@ namespace izibongo.api.DAL.Repository.Families
         {
             return _repositoryContext.Families
                     .Where(f => f.Id == id)
+                    .DefaultIfEmpty(new Family())
                     .FirstOrDefault();
         }
 
-        public Entities.Family GetAFamilyWithIzibongo(Guid id)
+        public FamilyModelExtended GetAFamilyWithIzibongo(Guid id)
         {
-            throw new NotImplementedException();
+            return new FamilyModelExtended(GetAFamily(id))
+            {
+                Izibongo = _repositoryContext.Izibongo
+                            // .Where(i => i.Family.Id == id)
+                            .Where(i => i.FamilyId == id)
+            };
         }
 
         public IEnumerable<Entities.Family> GetAllFamilies()

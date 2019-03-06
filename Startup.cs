@@ -11,17 +11,20 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 using NLog;
 
 namespace izibongo.api
 {
     public class Startup
     {
-        public Startup(IHostingEnvironment env )
+        public Startup(IHostingEnvironment env)
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
@@ -49,7 +52,19 @@ namespace izibongo.api
             services.ConfigureLoggerService();
             services.AddTransient<DbInitializer>();
             services.AddAutoMapper();
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc(opt =>
+            {
+                opt.ReturnHttpNotAcceptable = true;
+                opt.OutputFormatters
+                .OfType<JsonOutputFormatter>()
+                .FirstOrDefault();                
+            })
+            .AddJsonOptions(opt => {
+                opt.SerializerSettings.ContractResolver =
+                new CamelCasePropertyNamesContractResolver();
+                opt.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+            })
+            .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -88,7 +103,7 @@ namespace izibongo.api
 
                     }
 
-            });
+                });
             app.UseHttpsRedirection();
             app.UseMvc();
             seed.Seed().Wait();

@@ -5,3 +5,18 @@
 2019-03-06 11:08:32.9800 INFO Username adminIzibongo, was successfully authenticated
 2019-03-06 11:08:42.0089 ERROR Username adminIzibongo, was not successully authenticated at 2019/03/06 11:08:42 AM
 2019-03-06 11:08:47.9978 INFO Username adminIzibongo, was successfully authenticated
+2019-03-06 11:46:53.7757 INFO Family with name Magwaza and id: 9d2b382c-6e2f-4e99-bc49-01f4d144e2aa, was returned successfully
+2019-03-06 11:48:42.2641 INFO Family with name Magwaza and id: 9d2b382c-6e2f-4e99-bc49-01f4d144e2aa, was returned successfully
+2019-03-06 11:49:25.2037 INFO Family with name Magwaza and id: 9d2b382c-6e2f-4e99-bc49-01f4d144e2aa, was returned successfully
+2019-03-06 12:04:39.0461 INFO Family with name Magwaza and id: 9d2b382c-6e2f-4e99-bc49-01f4d144e2aa, was returned successfully
+2019-03-06 12:11:14.1095 INFO Family with name Magwaza and id: 9d2b382c-6e2f-4e99-bc49-01f4d144e2aa, was returned successfully
+2019-03-06 12:12:43.1358 INFO Family with name Magwaza and id: 9d2b382c-6e2f-4e99-bc49-01f4d144e2aa, was returned successfully
+2019-03-06 12:14:26.9379 INFO Family with name Magwaza and id: 9d2b382c-6e2f-4e99-bc49-01f4d144e2aa, was returned successfully
+2019-03-06 12:18:36.3588 INFO Family with name Magwaza and id: 9d2b382c-6e2f-4e99-bc49-01f4d144e2aa, was returned successfully
+2019-03-06 12:19:28.9859 INFO Family with name Magwaza and id: 9d2b382c-6e2f-4e99-bc49-01f4d144e2aa, was returned successfully
+2019-03-06 12:19:38.1118 INFO Family with Name Magwaza & Id: 9d2b382c-6e2f-4e99-bc49-01f4d144e2aa was retured successfully
+2019-03-06 12:31:11.7141 INFO Family with name Magwaza and id: 9d2b382c-6e2f-4e99-bc49-01f4d144e2aa, was returned successfully
+2019-03-06 12:34:05.9480 INFO Family with name Magwaza and id: 9d2b382c-6e2f-4e99-bc49-01f4d144e2aa, was returned successfully
+2019-03-06 12:34:50.9515 INFO Family with name Magwaza and id: 9d2b382c-6e2f-4e99-bc49-01f4d144e2aa, was returned successfully
+2019-03-06 12:39:27.3704 INFO Family with name Magwaza and id: 9d2b382c-6e2f-4e99-bc49-01f4d144e2aa, was returned successfully
+2019-03-06 12:40:15.0472 INFO Family with name Magwaza and id: 9d2b382c-6e2f-4e99-bc49-01f4d144e2aa, was returned successfully

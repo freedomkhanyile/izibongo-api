@@ -15,9 +15,7 @@ namespace izibongo.api.DAL.Entities
         public string ModifyUserId { get; set; }
         public DateTime ModifyDate { get; set; }
         public string StatusId { get; set; }
-
-        //Family the isibongo belongs to
-        public Family Family { get; set; }
+        public Guid FamilyId { get; set; }
 
         //User that wrote the Isibongo
         public User User { get; set; }

@@ -18,6 +18,7 @@ namespace izibongo.api.DAL.DbContext
         public DbSet<Family> Families { get; set; }
         public DbSet<Isibongo> Izibongo { get; set; }
         public DbSet<Status> Statuses { get; set; }
+ 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

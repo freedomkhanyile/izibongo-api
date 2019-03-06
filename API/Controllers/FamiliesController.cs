@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using AutoMapper;
 using izibongo.api.API.Helpers.HATEOAS;
+using izibongo.api.DAL.Contracts.ILoggerService;
 using izibongo.api.DAL.Contracts.IRepositoryWrapper;
+using izibongo.api.DAL.Entities.Extensions;
 using izibongo.api.DAL.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,15 +18,19 @@ namespace izibongo.api.API.Controllers
         public FamiliesController(
             IRepositoryWrapper repositoryWrapper,
             IMapper mapper,
-            IUrlHelper urlHelper)
+            IUrlHelper urlHelper,
+            ILoggerService logger)
         {
             _repositoryWrapper = repositoryWrapper;
             _mapper = mapper;
             _urlHelper = urlHelper;
+            _logger = logger;
         }
         private IRepositoryWrapper _repositoryWrapper;
         private IMapper _mapper;
         private IUrlHelper _urlHelper;
+        private ILoggerService _logger;
+
 
         [HttpGet(Name = "GetAllFamilies")]
         public IActionResult Get(ResourceParameter resourceParameter)
@@ -66,25 +72,56 @@ namespace izibongo.api.API.Controllers
 
         }
 
-        [HttpGet("{id}",Name="GetFamilyById")]
+        [HttpGet("{id}", Name = "GetFamilyById")]
         public IActionResult Get(string id)
         {
             try
             {
                 var family = _mapper.Map<FamilyModel>(_repositoryWrapper.Family.GetAFamily(new Guid(id)));
-                if(family!= null)
-                return Ok(CreateLinksForResource(family));
 
-                else
+                if (family.IsEmptyObject())
+                {
+                    _logger.LogError($"Family with id: {id}, has not been found in our records at {DateTime.Now}");
                     return NotFound();
+                }
+                else
+                {
+                    _logger.LogInfo($"Family with Name {family.FamilyName} & Id: {family.Id} was retured successfully");
+                    return Ok(CreateLinksForResource(family));
+                }
+
             }
             catch (System.Exception)
             {
-                
                 throw;
             }
-             
+
         }
+
+        [HttpGet("{id}/izibongo")]
+        public IActionResult GetFamilyWithIzibongo(string id)
+        {
+            try
+            {
+                var family = _repositoryWrapper.Family.GetAFamilyWithIzibongo(new Guid(id));
+                if (family.IsEmptyObject())
+                {
+                    _logger.LogError($"Family with id: {id}, has not been found in our records at {DateTime.Now}");
+                    return NotFound();
+                }
+                else{
+                    _logger.LogInfo($"Family with name {family.FamilyName} and id: {family.Id}, was returned successfully");
+                    return Ok(family);
+                }
+            }
+            catch (System.Exception)
+            {
+
+                throw;
+            }
+        }
+
+
 
 
 
