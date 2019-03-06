@@ -98,7 +98,7 @@ namespace izibongo.api.API.Controllers
 
         }
 
-        [HttpGet("{id}/izibongo")]
+        [HttpGet("{id}/izibongo", Name ="GetFamilyWithIzibongo")]
         public IActionResult GetFamilyWithIzibongo(string id)
         {
             try
@@ -161,6 +161,12 @@ namespace izibongo.api.API.Controllers
                 new LinkModel(
                     _urlHelper.Link("GetFamilyById", new { id = model.Id }),
                     "Get_Family_By_Id",
+                    "GET"
+                ));
+            model.Links.Add(
+                new LinkModel(
+                    _urlHelper.Link("GetFamilyWithIzibongo",new {id = model.Id }),
+                    "Get_Family_With_Izibongo",
                     "GET"
                 ));
 

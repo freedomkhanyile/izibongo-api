@@ -20,3 +20,5 @@
 2019-03-06 12:34:50.9515 INFO Family with name Magwaza and id: 9d2b382c-6e2f-4e99-bc49-01f4d144e2aa, was returned successfully
 2019-03-06 12:39:27.3704 INFO Family with name Magwaza and id: 9d2b382c-6e2f-4e99-bc49-01f4d144e2aa, was returned successfully
 2019-03-06 12:40:15.0472 INFO Family with name Magwaza and id: 9d2b382c-6e2f-4e99-bc49-01f4d144e2aa, was returned successfully
+2019-03-06 12:54:33.5924 INFO Family with Name Magwaza & Id: 9d2b382c-6e2f-4e99-bc49-01f4d144e2aa was retured successfully
+2019-03-06 12:54:44.3703 INFO Family with name Magwaza and id: 9d2b382c-6e2f-4e99-bc49-01f4d144e2aa, was returned successfully
