@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using AutoMapper;
@@ -28,11 +29,6 @@ namespace izibongo.api.API.Controllers
         [HttpGet(Name = "GetAllFamilies")]
         public IActionResult Get(ResourceParameter resourceParameter)
         {
-            // var families = _repositoryWrapper.Family.GetAllFamilies();
-            // if (families != null)
-            //     return Ok(_mapper.Map<IEnumerable<FamilyModel>>(families));
-
-            // return BadRequest("Server Error please try again.");
             try
             {
                 var familyList = _mapper.Map<IEnumerable<FamilyModel>>
@@ -64,11 +60,30 @@ namespace izibongo.api.API.Controllers
 
             }
             catch (System.Exception)
-            {                 
+            {
                 return StatusCode(500, "internal server error");
             }
 
+        }
 
+        [HttpGet("{id}",Name="GetFamilyById")]
+        public IActionResult Get(string id)
+        {
+            try
+            {
+                var family = _mapper.Map<FamilyModel>(_repositoryWrapper.Family.GetAFamily(new Guid(id)));
+                if(family!= null)
+                return Ok(CreateLinksForResource(family));
+
+                else
+                    return NotFound();
+            }
+            catch (System.Exception)
+            {
+                
+                throw;
+            }
+             
         }
 
 
@@ -107,7 +122,7 @@ namespace izibongo.api.API.Controllers
         {
             model.Links.Add(
                 new LinkModel(
-                    _urlHelper.Link("GetFamilyById", new { }),
+                    _urlHelper.Link("GetFamilyById", new { id = model.Id }),
                     "Get_Family_By_Id",
                     "GET"
                 ));
