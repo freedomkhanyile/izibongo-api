@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "f866e48211da1fc2bb587cf6d520b2dd71def26a"
+    "signature": "ef03e7f2eee9b6bbd6a6e40f336cd19d5514a85f"
   },
   "compilationOptions": {
     "defines": [
@@ -27,7 +27,8 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "3.0.1",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.EntityFrameworkCore.Tools.DotNet": "2.0.3",
-          "Microsoft.NETCore.App": "2.1.0"
+          "Microsoft.NETCore.App": "2.1.0",
+          "NLog.Extensions.Logging": "1.4.0"
         },
         "runtime": {
           "izibongo.api.dll": {}
@@ -267,6 +268,32 @@
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.0"
+        }
+      },
+      "NLog/4.5.11": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.5.11.8645"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/NLog.dll": {}
+        }
+      },
+      "NLog.Extensions.Logging/1.4.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "2.1.1",
+          "NLog": "4.5.11"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NLog.Extensions.Logging.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.4.0.867"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/NLog.Extensions.Logging.dll": {}
         }
       },
       "System.ComponentModel/4.3.0": {
@@ -3319,6 +3346,20 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "NLog/4.5.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7TI+dYvEIOcCN6fjr3yjMN5AtPBSbHNxKGmn/5rkqbBk81MGsnQBkParoGOidibDIe3dwThJJndxl7O3zmd3rA==",
+      "path": "nlog/4.5.11",
+      "hashPath": "nlog.4.5.11.nupkg.sha512"
+    },
+    "NLog.Extensions.Logging/1.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FvCGr0FSntm9a8z/QaZv9+01LmEXh9NZ44BExArAn+kwyhPJCze5lnPekoHo0iWUKnwNtJFUo/9XOjFfIs0GXQ==",
+      "path": "nlog.extensions.logging/1.4.0",
+      "hashPath": "nlog.extensions.logging.1.4.0.nupkg.sha512"
     },
     "System.ComponentModel/4.3.0": {
       "type": "package",

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using izibongo.api.DAL.Contracts.ILoggerService;
 using Microsoft.AspNetCore.Mvc;
 
 namespace izibongo.api.Controllers
@@ -10,10 +11,21 @@ namespace izibongo.api.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        public ValuesController(ILoggerService logger)
+        {
+            _logger = logger;
+        }
+        private ILoggerService _logger;
+
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
+            _logger.LogInfo("Here is info message from our values controller.");
+            _logger.LogDebug("Here is debug message from our values controller.");
+            _logger.LogWarn("Here is warn message from our values controller.");
+            _logger.LogError("Here is error message from our values controller.");
+
             return new string[] { "value1", "value2" };
         }
 

@@ -1,7 +1,9 @@
+using izibongo.api.DAL.Contracts.ILoggerService;
 using izibongo.api.DAL.Contracts.IRepositoryWrapper;
 using izibongo.api.DAL.DbContext;
 using izibongo.api.DAL.Entities;
 using izibongo.api.DAL.Repository.RepositoryWrapper;
+using izibongo.api.Logger;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -51,12 +53,12 @@ namespace izibongo.api.API.ServiceExtensions
             services.AddTransient<IRepositoryWrapper, RepositoryWrapper>();
         }
 
-         public static void ConfigurActionContextAccessor(this IServiceCollection services)
+        public static void ConfigurActionContextAccessor(this IServiceCollection services)
         {
             services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
         }
 
-       public static void ConfigureUrlHelper(this IServiceCollection services)
+        public static void ConfigureUrlHelper(this IServiceCollection services)
         {
             services.AddScoped<IUrlHelper>(factory =>
             {
@@ -64,6 +66,11 @@ namespace izibongo.api.API.ServiceExtensions
                                            .ActionContext;
                 return new UrlHelper(actionContext);
             });
+        }
+
+        public static void ConfigureLoggerService(this IServiceCollection services)
+        {
+            services.AddSingleton<ILoggerService, LoggerService>();
         }
     }
 }
