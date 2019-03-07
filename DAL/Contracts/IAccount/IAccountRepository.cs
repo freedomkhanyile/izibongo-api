@@ -5,6 +5,6 @@ namespace izibongo.api.DAL.Contracts.IAccount
 {
     public interface IAccountRepository
     {
-        Task <bool>  Login(LoginModel model);
+        Task <TokenResponse>  Login(LoginModel model);
     }
 }

@@ -49,6 +49,7 @@ namespace izibongo.api
             services.ConfigureRepositoryWrapper();
             services.ConfigurActionContextAccessor();
             services.ConfigureUrlHelper();
+            services.ConfigureJWTToken(Configuration);
             services.ConfigureLoggerService();
             services.AddTransient<DbInitializer>();
             services.AddAutoMapper();
@@ -105,6 +106,7 @@ namespace izibongo.api
 
                 });
             app.UseHttpsRedirection();
+            app.UseAuthentication();
             app.UseMvc();
             seed.Seed().Wait();
         }

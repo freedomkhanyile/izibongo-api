@@ -7,6 +7,11 @@ namespace izibongo.api.DAL.Models
         [Required]
         public string UserName { get; set; }
         [Required]
-        public string Password { get; set; }
+        public string Password { get; set; } 
+    }
+
+    public class TokenResponse
+    {
+        public string Token { get; set; }        
     }
 }

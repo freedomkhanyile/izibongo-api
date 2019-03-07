@@ -26,9 +26,9 @@ namespace izibongo.api.API.Controllers
             try
             {
                 var result = _repositoryWrapper.Account.Login(model);
-                if (result.Result){
+                if (result.Result.Token != null){
                     _logger.LogInfo($"Username {model.UserName}, was successfully authenticated");
-                    return Ok();
+                    return Ok(result.Result);
                 }
                 else {
                     _logger.LogError($"Username {model.UserName}, was not successully authenticated at {DateTime.Now}");

@@ -7,11 +7,13 @@ using izibongo.api.DAL.Contracts.ILoggerService;
 using izibongo.api.DAL.Contracts.IRepositoryWrapper;
 using izibongo.api.DAL.Entities.Extensions;
 using izibongo.api.DAL.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace izibongo.api.API.Controllers
 {
 
+    [Authorize]
     [Route("api/[controller]")]
     public class FamiliesController : Controller
     {

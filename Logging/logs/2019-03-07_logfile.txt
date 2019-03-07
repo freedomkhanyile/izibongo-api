@@ -1,0 +1,7 @@
+2019-03-07 10:56:53.7448 INFO Username adminIzibongo, was successfully authenticated
+2019-03-07 11:19:44.5902 INFO Username adminIzibongo, was successfully authenticated
+2019-03-07 12:59:47.4533 INFO Username adminIzibongo, was successfully authenticated
+2019-03-07 13:03:16.0299 INFO Username adminIzibongo, was successfully authenticated
+2019-03-07 13:03:55.4427 INFO Username adminIzibongo, was successfully authenticated
+2019-03-07 13:04:38.4201 INFO Username adminIzibongo, was successfully authenticated
+2019-03-07 13:16:05.0873 INFO Username adminIzibongo, was successfully authenticated

@@ -1,15 +1,19 @@
+using System.Text;
 using izibongo.api.DAL.Contracts.ILoggerService;
 using izibongo.api.DAL.Contracts.IRepositoryWrapper;
 using izibongo.api.DAL.DbContext;
 using izibongo.api.DAL.Entities;
 using izibongo.api.DAL.Repository.RepositoryWrapper;
 using izibongo.api.Logger;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Mvc.Routing;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 
 namespace izibongo.api.API.ServiceExtensions
 {
@@ -71,6 +75,26 @@ namespace izibongo.api.API.ServiceExtensions
         public static void ConfigureLoggerService(this IServiceCollection services)
         {
             services.AddSingleton<ILoggerService, LoggerService>();
+        }
+
+        public static void ConfigureJWTToken(
+            this IServiceCollection services,
+            IConfigurationRoot _configuration)
+        {
+           
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
+                {
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuer = true,
+                        ValidateAudience = true,
+                        ValidateLifetime = true,
+                        ValidateIssuerSigningKey = true,
+                        ValidIssuer = "https://www.izibongo.co.za",
+                        ValidAudience = "https://www.izibongo.co.za",
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Security:Secret"]))
+                    };
+                });
         }
     }
 }
