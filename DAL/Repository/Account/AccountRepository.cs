@@ -69,5 +69,10 @@ namespace izibongo.api.DAL.Repository.Account
             }
 
         }
+
+        public void Logout()
+        {
+            _signInManager.SignOutAsync();
+        }
     }
 }

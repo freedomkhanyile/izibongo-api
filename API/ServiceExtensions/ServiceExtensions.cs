@@ -94,7 +94,13 @@ namespace izibongo.api.API.ServiceExtensions
                         ValidAudience = "https://www.izibongo.co.za",
                         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Security:Secret"]))
                     };
+              
                 });
+             services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            });
         }
     }
 }

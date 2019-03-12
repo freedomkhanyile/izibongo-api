@@ -1,0 +1,1 @@
+2019-03-12 09:51:08.0899 INFO Username adminIzibongo, was successfully authenticated

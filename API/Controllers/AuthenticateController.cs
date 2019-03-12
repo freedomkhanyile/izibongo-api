@@ -41,5 +41,11 @@ namespace izibongo.api.API.Controllers
             }            
         }
 
+        [HttpPost("[action]")]
+        public IActionResult Logout(){
+            _repositoryWrapper.Account.Logout();
+            return Ok();
+        }
+
     }
 }
