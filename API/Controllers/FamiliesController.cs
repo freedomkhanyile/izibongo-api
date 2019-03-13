@@ -1,13 +1,16 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using AutoMapper;
 using izibongo.api.API.Helpers.HATEOAS;
 using izibongo.api.DAL.Contracts.ILoggerService;
 using izibongo.api.DAL.Contracts.IRepositoryWrapper;
+using izibongo.api.DAL.Entities;
 using izibongo.api.DAL.Entities.Extensions;
 using izibongo.api.DAL.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace izibongo.api.API.Controllers
@@ -21,17 +24,20 @@ namespace izibongo.api.API.Controllers
             IRepositoryWrapper repositoryWrapper,
             IMapper mapper,
             IUrlHelper urlHelper,
-            ILoggerService logger)
+            ILoggerService logger,
+            UserManager<User> userManager)
         {
             _repositoryWrapper = repositoryWrapper;
             _mapper = mapper;
             _urlHelper = urlHelper;
             _logger = logger;
+            _userManager = userManager;
         }
         private IRepositoryWrapper _repositoryWrapper;
         private IMapper _mapper;
         private IUrlHelper _urlHelper;
         private ILoggerService _logger;
+        private UserManager<User> _userManager;
 
 
         [HttpGet(Name = "GetAllFamilies")]
@@ -100,7 +106,7 @@ namespace izibongo.api.API.Controllers
 
         }
 
-        [HttpGet("{id}/izibongo", Name ="GetFamilyWithIzibongo")]
+        [HttpGet("{id}/izibongo", Name = "GetFamilyWithIzibongo")]
         public IActionResult GetFamilyWithIzibongo(string id)
         {
             try
@@ -111,7 +117,8 @@ namespace izibongo.api.API.Controllers
                     _logger.LogError($"Family with id: {id}, has not been found in our records at {DateTime.Now}");
                     return NotFound();
                 }
-                else{
+                else
+                {
                     _logger.LogInfo($"Family with name {family.FamilyName} and id: {family.Id}, was returned successfully");
                     return Ok(family);
                 }
@@ -121,6 +128,67 @@ namespace izibongo.api.API.Controllers
 
                 throw;
             }
+        }
+
+        [HttpPost(Name = "AddFamily")]
+        public async Task<IActionResult> Post([FromBody] Family model)
+        {
+            try
+            {
+                if (!ModelState.IsValid) return BadRequest(ModelState);
+
+                var user = await _userManager.FindByNameAsync(this.User.Identity.Name);
+
+                if (user != null)
+                {
+                    model.CreateUserId = user.Id;
+                    model.ModifyUserId = model.CreateUserId;
+                }
+                else {
+                     return BadRequest("User management fault. Contact system administratore");
+                }
+                model.Id = Guid.NewGuid();
+                model.CreateDate = DateTime.Now;
+                model.ModifyDate = DateTime.Now;
+                model.StatusId = "55f8e2db-a8de-4b36-afe3-baa958df78e0";
+
+                if (_repositoryWrapper.Family.AddFamily(model))
+                    return CreatedAtRoute("GetFamilyById", new { id = model.Id }, model);
+            }
+            catch (System.Exception)
+            {
+
+                throw;
+            }
+            return BadRequest("Server Error please try again.");
+        }
+
+        [HttpPut("{id}", Name = "EditFamily")]
+        public async Task<IActionResult> Put(string id, [FromBody]FamilyModel model)
+        {
+            try
+            {
+                if (!ModelState.IsValid) return BadRequest(ModelState);
+                var user = await _userManager.FindByNameAsync(this.User.Identity.Name);
+            
+                if (user != null)                                  
+                    model.ModifyUserId = user.Id;
+                else  
+                    return BadRequest("User management fault. Contact system administratore");
+
+                var dbModel = _repositoryWrapper.Family.GetAFamily(new Guid(id));
+
+                if(dbModel.IsObjectNull()) return NotFound($"Could not find a Family with Id {id} to Update");
+                
+                if(_repositoryWrapper.Family.UpdateFamily(dbModel, model))  return CreatedAtRoute("GetFamilyById", new { id = dbModel.Id }, dbModel);
+
+            }
+            catch (System.Exception)
+            {
+
+                throw;
+            }
+            return BadRequest("Server Error please try again.");
         }
 
 
@@ -167,9 +235,15 @@ namespace izibongo.api.API.Controllers
                 ));
             model.Links.Add(
                 new LinkModel(
-                    _urlHelper.Link("GetFamilyWithIzibongo",new {id = model.Id }),
+                    _urlHelper.Link("GetFamilyWithIzibongo", new { id = model.Id }),
                     "Get_Family_With_Izibongo",
                     "GET"
+                ));
+            model.Links.Add(
+                new LinkModel(
+                    _urlHelper.Link("EditFamily", new { id = model.Id }),
+                    "Edit_Family",
+                    "PUT"
                 ));
 
             return model;
@@ -185,6 +259,13 @@ namespace izibongo.api.API.Controllers
                 "self",
                 "GET"
                 ));
+            
+            familyWrapper.Links.Add(
+                new LinkModel(_urlHelper.Link("AddFamily", new { }),
+                "Add_A_Family",
+                "POST"
+                ));
+            
 
             return familyWrapper;
         }

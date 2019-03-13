@@ -4,6 +4,7 @@ using System.Linq;
 using izibongo.api.DAL.Contracts.IFamily;
 using izibongo.api.DAL.DbContext;
 using izibongo.api.DAL.Entities;
+using izibongo.api.DAL.Entities.Extensions.Family;
 using izibongo.api.DAL.Models;
 using izibongo.api.DAL.Repository.RepositoryBase;
 
@@ -19,7 +20,21 @@ namespace izibongo.api.DAL.Repository.Families
         }
         public bool AddFamily(Entities.Family model)
         {
-            throw new NotImplementedException();
+            var isDone = false;
+
+            try
+            {
+                Create(model);
+                Save();
+                isDone = true;
+            }
+            catch (System.Exception)
+            {
+                
+                throw;
+            }
+
+            return isDone;
         }
 
         public Entities.Family GetAFamily(Guid id)
@@ -47,7 +62,19 @@ namespace izibongo.api.DAL.Repository.Families
 
         public bool UpdateFamily(Entities.Family dbModel, FamilyModel model)
         {
-            throw new NotImplementedException();
+            var isDone = false;
+            try
+            { 
+                dbModel.Map(model);
+                Update(dbModel);
+                Save();
+                isDone = true;
+            }
+            catch (System.Exception)
+            {                
+                throw;
+            }
+            return isDone;
         }
     }
 }

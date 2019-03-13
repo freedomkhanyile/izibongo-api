@@ -34,7 +34,7 @@ namespace izibongo.api.DAL.Repository.Account
         private IConfigurationRoot _config;
         public async Task<TokenResponse> Login(LoginModel model)
         {
-            var result = await _signInManager.PasswordSignInAsync(model.UserName, model.Password, false, false);
+            var result = await _signInManager.PasswordSignInAsync(model.UserName, model.Password, true, false);
             if (!result.Succeeded)
             {
                 return new TokenResponse();
@@ -56,7 +56,7 @@ namespace izibongo.api.DAL.Repository.Account
                 var credentials = new SigningCredentials(KeySecurity, SecurityAlgorithms.HmacSha256);
 
                 var token = new JwtSecurityToken(
-                     issuer: "https://www.izibongo.co.za",
+                    issuer: "https://www.izibongo.co.za",
                     audience: "https://www.izibongo.co.za",
                     claims: claims,
                     expires: DateTime.Now.AddHours(9),
@@ -71,7 +71,8 @@ namespace izibongo.api.DAL.Repository.Account
         }
 
         public void Logout()
-        {
+        {           
+            new JwtSecurityTokenHandler().WriteToken(new  JwtSecurityToken());
             _signInManager.SignOutAsync();
         }
     }

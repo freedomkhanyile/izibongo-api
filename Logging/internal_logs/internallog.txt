@@ -7335,3 +7335,1693 @@ File name: 'NLog.Extended, Culture=neutral, PublicKeyToken=null'
 2019-03-12 09:56:26.4797 Trace File Target[logfile] has 2 layouts
 2019-03-12 09:56:26.4797 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
 2019-03-12 09:56:26.5006 Debug Watching path 'C:\Users\User\source\vscode-repos\izibongo.api' filter 'nlog.config' for changes.
+2019-03-12 10:16:33.3152 Info Shutting down logging...
+2019-03-12 10:16:33.3152 Debug Stopping file watching for path 'C:\Users\User\source\vscode-repos\izibongo.api' filter 'nlog.config'
+2019-03-12 10:16:33.3240 Trace Flushing all targets...
+2019-03-12 10:16:33.3240 Trace ForEachItemInParallel() 1 items
+2019-03-12 10:16:33.3240 Trace FileTarget(Name=logfile): FlushAsync
+2019-03-12 10:16:33.3240 Trace Continuation invoked: 
+2019-03-12 10:16:33.3240 Trace Parallel task completed. 0 items remaining
+2019-03-12 10:16:33.3240 Trace FileTarget(Name=logfile): FlushAsync Done
+2019-03-12 10:16:33.3240 Debug Closing logging configuration...
+2019-03-12 10:16:33.3240 Trace Closing File Target[logfile]
+2019-03-12 10:16:33.3240 Debug Closing target 'File Target[logfile]'.
+2019-03-12 10:16:33.3395 Debug Closed target 'File Target[logfile]'.
+2019-03-12 10:16:33.3395 Trace Closing 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'
+2019-03-12 10:16:33.3395 Trace Closing Layout Renderer: ${literal}
+2019-03-12 10:16:33.3395 Trace Closing Layout Renderer: ${shortdate}
+2019-03-12 10:16:33.3395 Trace Closing Layout Renderer: ${literal}
+2019-03-12 10:16:33.3395 Trace Closing '${longdate} ${level:uppercase=true} ${message}'
+2019-03-12 10:16:33.3395 Trace Closing Layout Renderer: ${longdate}
+2019-03-12 10:16:33.3395 Trace Closing Layout Renderer: ${literal}
+2019-03-12 10:16:33.3395 Trace Closing Layout Renderer: ${uppercase}
+2019-03-12 10:16:33.3395 Trace Closing SimpleLayout=Layout Renderer: ${level}
+2019-03-12 10:16:33.3395 Trace Closing Layout Renderer: ${level}
+2019-03-12 10:16:33.3395 Trace Closing Layout Renderer: ${literal}
+2019-03-12 10:16:33.3395 Trace Closing Layout Renderer: ${message}
+2019-03-12 10:16:33.3395 Debug Finished closing logging configuration.
+2019-03-12 10:16:33.3395 Info Logger has been shut down.
+2019-03-12 10:16:45.9693 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2019-03-12 10:16:46.0377 Debug Found assembly location directory: 'C:\Users\User\.nuget\packages\nlog\4.5.11\lib\netstandard2.0' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2019-03-12 10:16:46.0441 Debug Search for auto loading files in location: C:\Users\User\.nuget\packages\nlog\4.5.11\lib\netstandard2.0
+2019-03-12 10:16:46.0441 Debug Found assembly location directory: 'C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1' (izibongo.api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+2019-03-12 10:16:46.0441 Debug Search for auto loading files in location: C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1
+2019-03-12 10:16:46.0573 Debug Auto loading based on AppDomain-BaseDirectory found location: C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1
+2019-03-12 10:16:46.0573 Debug Search for auto loading files in location: C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1
+2019-03-12 10:16:46.0573 Debug Start auto loading, location: C:\Users\User\.nuget\packages\nlog\4.5.11\lib\netstandard2.0
+2019-03-12 10:16:46.0573 Trace Assembly 'Microsoft.Extensions.Logging, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2019-03-12 10:16:46.0573 Trace Assembly 'Microsoft.Extensions.Logging.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2019-03-12 10:16:46.0573 Debug Auto loading done
+2019-03-12 10:16:46.0573 Info Message Template Auto Format enabled
+2019-03-12 10:16:46.0573 Info Loading assembly: NLog.Extended
+2019-03-12 10:16:46.1124 Error Error loading extensions. Exception: System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'NLog.Extended, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark, IntPtr pPrivHostBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.XmlLoggingConfiguration.ParseExtensionWithAssembly(String assemblyName, String prefix)
+
+
+2019-03-12 10:16:46.1124 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Extended ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark, IntPtr pPrivHostBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.XmlLoggingConfiguration.ParseExtensionWithAssembly(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2019-03-12 10:16:46.1294 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:16:46.1294 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-12 10:16:46.1390 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2019-03-12 10:16:46.1611 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2019-03-12 10:16:46.1611 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:16:46.1611 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 10:16:46.1611 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:16:46.1611 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-12 10:16:46.1611 Trace  Scanning Property Culture '' System.Globalization
+2019-03-12 10:16:46.1675 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-12 10:16:46.1675 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-12 10:16:46.1675 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:16:46.1675 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 10:16:46.1675 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:16:46.1675 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2019-03-12 10:16:46.1675 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:16:46.1675 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-12 10:16:46.1867 Debug Setting 'FileTarget.name' to 'logfile'
+2019-03-12 10:16:46.1867 Debug Setting 'FileTarget.fileName' to 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'
+2019-03-12 10:16:46.1867 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:16:46.1867 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-03-12 10:16:46.1867 Debug Setting 'FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2019-03-12 10:16:46.1867 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:16:46.1867 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-12 10:16:46.1867 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2019-03-12 10:16:46.1867 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2019-03-12 10:16:46.1867 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:16:46.1867 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 10:16:46.1867 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:16:46.1867 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-12 10:16:46.1867 Trace  Scanning Property Culture '' System.Globalization
+2019-03-12 10:16:46.1867 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-12 10:16:46.1867 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-12 10:16:46.1984 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:16:46.1984 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 10:16:46.1984 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:16:46.1984 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-12 10:16:46.1984 Info Adding target File Target[logfile]
+2019-03-12 10:16:46.1984 Debug Registered target logfile: NLog.Targets.FileTarget
+2019-03-12 10:16:46.1984 Trace ParseRulesElement
+2019-03-12 10:16:46.2136 Info Configured from an XML element in C:\Users\User\source\vscode-repos\izibongo.api/nlog.config...
+2019-03-12 10:16:46.2136 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2019-03-12 10:16:46.2314 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2019-03-12 10:16:46.2314 Debug --- NLog configuration dump ---
+2019-03-12 10:16:46.2314 Debug Targets:
+2019-03-12 10:16:46.2314 Debug File Target[logfile]
+2019-03-12 10:16:46.2314 Debug Rules:
+2019-03-12 10:16:46.2314 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]
+2019-03-12 10:16:46.2314 Debug --- End of NLog configuration dump ---
+2019-03-12 10:16:46.2314 Trace FindReachableObject<System.Object>:
+2019-03-12 10:16:46.2314 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]'
+2019-03-12 10:16:46.2314 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2019-03-12 10:16:46.2314 Trace  Scanning FileTarget 'File Target[logfile]'
+2019-03-12 10:16:46.2314 Trace   Scanning Property FileName ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2019-03-12 10:16:46.2446 Trace   Scanning SimpleLayout ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt''
+2019-03-12 10:16:46.2446 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:16:46.2446 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:16:46.2446 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-03-12 10:16:46.2446 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:16:46.2446 Trace   Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2019-03-12 10:16:46.2446 Trace   Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-03-12 10:16:46.2446 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:16:46.2446 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-12 10:16:46.2446 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:16:46.2446 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-12 10:16:46.2446 Trace     Scanning Property Culture '' System.Globalization
+2019-03-12 10:16:46.2446 Trace     Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-12 10:16:46.2446 Trace     Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-12 10:16:46.2446 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:16:46.2446 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 10:16:46.2446 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:16:46.2446 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-12 10:16:46.2446 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2019-03-12 10:16:46.2446 Trace   Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2019-03-12 10:16:46.2446 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2019-03-12 10:16:46.2446 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2019-03-12 10:16:46.2446 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2019-03-12 10:16:46.2446 Info Found 14 configuration items
+2019-03-12 10:16:46.2446 Trace Initializing Layout Renderer: ${message}
+2019-03-12 10:16:46.2446 Trace Initializing Layout Renderer: ${literal}
+2019-03-12 10:16:46.2446 Trace Initializing Layout Renderer: ${level}
+2019-03-12 10:16:46.2611 Trace Initializing SimpleLayout=Layout Renderer: ${level}
+2019-03-12 10:16:46.2611 Trace FindReachableObject<System.Object>:
+2019-03-12 10:16:46.2611 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-12 10:16:46.2611 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:16:46.2611 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 10:16:46.2611 Trace Initializing Layout Renderer: ${uppercase}
+2019-03-12 10:16:46.2611 Trace Initializing Layout Renderer: ${literal}
+2019-03-12 10:16:46.2611 Trace Initializing Layout Renderer: ${longdate}
+2019-03-12 10:16:46.2611 Trace Initializing '${longdate} ${level:uppercase=true} ${message}'
+2019-03-12 10:16:46.2611 Trace FindReachableObject<System.Object>:
+2019-03-12 10:16:46.2611 Trace Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-03-12 10:16:46.2611 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:16:46.2611 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-12 10:16:46.2611 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:16:46.2611 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-12 10:16:46.2611 Trace   Scanning Property Culture '' System.Globalization
+2019-03-12 10:16:46.2611 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-12 10:16:46.2611 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-12 10:16:46.2611 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:16:46.2611 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 10:16:46.2611 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:16:46.2611 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-12 10:16:46.2611 Trace Initializing Layout Renderer: ${literal}
+2019-03-12 10:16:46.2769 Trace Initializing Layout Renderer: ${shortdate}
+2019-03-12 10:16:46.2769 Trace Initializing Layout Renderer: ${literal}
+2019-03-12 10:16:46.2769 Trace Initializing 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'
+2019-03-12 10:16:46.2769 Trace FindReachableObject<System.Object>:
+2019-03-12 10:16:46.2769 Trace Scanning SimpleLayout ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt''
+2019-03-12 10:16:46.2769 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:16:46.2769 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:16:46.2769 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-03-12 10:16:46.2769 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:16:46.2769 Trace Initializing File Target[logfile]
+2019-03-12 10:16:46.2769 Trace FindReachableObject<NLog.Layouts.Layout>:
+2019-03-12 10:16:46.2769 Trace Scanning FileTarget 'File Target[logfile]'
+2019-03-12 10:16:46.2769 Trace  Scanning Property FileName ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2019-03-12 10:16:46.2769 Trace  Scanning SimpleLayout ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt''
+2019-03-12 10:16:46.2769 Trace  Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2019-03-12 10:16:46.2769 Trace  Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-03-12 10:16:46.2769 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2019-03-12 10:16:46.2769 Trace  Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2019-03-12 10:16:46.2769 Trace File Target[logfile] has 2 layouts
+2019-03-12 10:16:46.2925 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2019-03-12 10:16:46.2925 Debug Watching path 'C:\Users\User\source\vscode-repos\izibongo.api' filter 'nlog.config' for changes.
+2019-03-12 10:17:04.0344 Debug Targets for izibongo.api.Logger.LoggerService by level:
+2019-03-12 10:17:04.0344 Debug Trace =>
+2019-03-12 10:17:04.0344 Debug Debug => logfile
+2019-03-12 10:17:04.0344 Debug Info => logfile
+2019-03-12 10:17:04.0432 Debug Warn => logfile
+2019-03-12 10:17:04.0432 Debug Error => logfile
+2019-03-12 10:17:04.0432 Debug Fatal => logfile
+2019-03-12 10:17:04.0817 Debug FileTarget(Name=logfile): Process file 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-12_logfile.txt' on startup
+2019-03-12 10:17:04.0952 Debug Creating file appender: C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-12_logfile.txt
+2019-03-12 10:17:04.1115 Trace Opening C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-12_logfile.txt with allowFileSharedWriting=False
+2019-03-12 10:17:18.5326 Trace Opening C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-12_logfile.txt with allowFileSharedWriting=False
+2019-03-12 10:18:43.8709 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2019-03-12 10:18:43.9429 Debug Found assembly location directory: 'C:\Users\User\.nuget\packages\nlog\4.5.11\lib\netstandard2.0' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2019-03-12 10:18:43.9429 Debug Search for auto loading files in location: C:\Users\User\.nuget\packages\nlog\4.5.11\lib\netstandard2.0
+2019-03-12 10:18:43.9553 Debug Found assembly location directory: 'C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1' (izibongo.api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+2019-03-12 10:18:43.9553 Debug Search for auto loading files in location: C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1
+2019-03-12 10:18:43.9553 Debug Auto loading based on AppDomain-BaseDirectory found location: C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1
+2019-03-12 10:18:43.9553 Debug Search for auto loading files in location: C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1
+2019-03-12 10:18:43.9553 Debug Start auto loading, location: C:\Users\User\.nuget\packages\nlog\4.5.11\lib\netstandard2.0
+2019-03-12 10:18:43.9553 Trace Assembly 'Microsoft.Extensions.Logging, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2019-03-12 10:18:43.9553 Trace Assembly 'Microsoft.Extensions.Logging.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2019-03-12 10:18:43.9643 Debug Auto loading done
+2019-03-12 10:18:43.9643 Info Message Template Auto Format enabled
+2019-03-12 10:18:43.9643 Info Loading assembly: NLog.Extended
+2019-03-12 10:18:44.0160 Error Error loading extensions. Exception: System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'NLog.Extended, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark, IntPtr pPrivHostBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.XmlLoggingConfiguration.ParseExtensionWithAssembly(String assemblyName, String prefix)
+
+
+2019-03-12 10:18:44.0160 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Extended ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark, IntPtr pPrivHostBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.XmlLoggingConfiguration.ParseExtensionWithAssembly(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2019-03-12 10:18:44.0363 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:18:44.0363 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-12 10:18:44.0468 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2019-03-12 10:18:44.0709 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2019-03-12 10:18:44.0709 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:18:44.0709 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 10:18:44.0709 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:18:44.0736 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-12 10:18:44.0736 Trace  Scanning Property Culture '' System.Globalization
+2019-03-12 10:18:44.0736 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-12 10:18:44.0736 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-12 10:18:44.0736 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:18:44.0736 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 10:18:44.0736 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:18:44.0736 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2019-03-12 10:18:44.0736 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:18:44.0736 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-12 10:18:44.0999 Debug Setting 'FileTarget.name' to 'logfile'
+2019-03-12 10:18:44.0999 Debug Setting 'FileTarget.fileName' to 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'
+2019-03-12 10:18:44.0999 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:18:44.0999 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-03-12 10:18:44.0999 Debug Setting 'FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2019-03-12 10:18:44.0999 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:18:44.1046 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-12 10:18:44.1046 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2019-03-12 10:18:44.1046 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2019-03-12 10:18:44.1046 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:18:44.1046 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 10:18:44.1046 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:18:44.1046 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-12 10:18:44.1046 Trace  Scanning Property Culture '' System.Globalization
+2019-03-12 10:18:44.1046 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-12 10:18:44.1046 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-12 10:18:44.1046 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:18:44.1046 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 10:18:44.1046 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:18:44.1046 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-12 10:18:44.1046 Info Adding target File Target[logfile]
+2019-03-12 10:18:44.1046 Debug Registered target logfile: NLog.Targets.FileTarget
+2019-03-12 10:18:44.1046 Trace ParseRulesElement
+2019-03-12 10:18:44.1249 Info Configured from an XML element in C:\Users\User\source\vscode-repos\izibongo.api/nlog.config...
+2019-03-12 10:18:44.1249 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2019-03-12 10:18:44.1390 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2019-03-12 10:18:44.1390 Debug --- NLog configuration dump ---
+2019-03-12 10:18:44.1390 Debug Targets:
+2019-03-12 10:18:44.1390 Debug File Target[logfile]
+2019-03-12 10:18:44.1390 Debug Rules:
+2019-03-12 10:18:44.1390 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]
+2019-03-12 10:18:44.1390 Debug --- End of NLog configuration dump ---
+2019-03-12 10:18:44.1390 Trace FindReachableObject<System.Object>:
+2019-03-12 10:18:44.1390 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]'
+2019-03-12 10:18:44.1390 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2019-03-12 10:18:44.1519 Trace  Scanning FileTarget 'File Target[logfile]'
+2019-03-12 10:18:44.1519 Trace   Scanning Property FileName ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2019-03-12 10:18:44.1519 Trace   Scanning SimpleLayout ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt''
+2019-03-12 10:18:44.1519 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:18:44.1519 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:18:44.1519 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-03-12 10:18:44.1519 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:18:44.1519 Trace   Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2019-03-12 10:18:44.1519 Trace   Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-03-12 10:18:44.1519 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:18:44.1519 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-12 10:18:44.1519 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:18:44.1519 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-12 10:18:44.1519 Trace     Scanning Property Culture '' System.Globalization
+2019-03-12 10:18:44.1519 Trace     Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-12 10:18:44.1519 Trace     Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-12 10:18:44.1519 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:18:44.1519 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 10:18:44.1519 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:18:44.1519 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-12 10:18:44.1519 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2019-03-12 10:18:44.1677 Trace   Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2019-03-12 10:18:44.1677 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2019-03-12 10:18:44.1677 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2019-03-12 10:18:44.1677 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2019-03-12 10:18:44.1677 Info Found 14 configuration items
+2019-03-12 10:18:44.1677 Trace Initializing Layout Renderer: ${message}
+2019-03-12 10:18:44.1677 Trace Initializing Layout Renderer: ${literal}
+2019-03-12 10:18:44.1677 Trace Initializing Layout Renderer: ${level}
+2019-03-12 10:18:44.1677 Trace Initializing SimpleLayout=Layout Renderer: ${level}
+2019-03-12 10:18:44.1677 Trace FindReachableObject<System.Object>:
+2019-03-12 10:18:44.1677 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-12 10:18:44.1677 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:18:44.1677 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 10:18:44.1826 Trace Initializing Layout Renderer: ${uppercase}
+2019-03-12 10:18:44.1826 Trace Initializing Layout Renderer: ${literal}
+2019-03-12 10:18:44.1826 Trace Initializing Layout Renderer: ${longdate}
+2019-03-12 10:18:44.1826 Trace Initializing '${longdate} ${level:uppercase=true} ${message}'
+2019-03-12 10:18:44.1826 Trace FindReachableObject<System.Object>:
+2019-03-12 10:18:44.1826 Trace Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-03-12 10:18:44.1826 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:18:44.1826 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-12 10:18:44.1826 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:18:44.1826 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-12 10:18:44.1826 Trace   Scanning Property Culture '' System.Globalization
+2019-03-12 10:18:44.1826 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-12 10:18:44.1826 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-12 10:18:44.1826 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:18:44.1826 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 10:18:44.1826 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:18:44.1826 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-12 10:18:44.1826 Trace Initializing Layout Renderer: ${literal}
+2019-03-12 10:18:44.1826 Trace Initializing Layout Renderer: ${shortdate}
+2019-03-12 10:18:44.1826 Trace Initializing Layout Renderer: ${literal}
+2019-03-12 10:18:44.1826 Trace Initializing 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'
+2019-03-12 10:18:44.1826 Trace FindReachableObject<System.Object>:
+2019-03-12 10:18:44.1826 Trace Scanning SimpleLayout ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt''
+2019-03-12 10:18:44.1826 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:18:44.1826 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:18:44.1981 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-03-12 10:18:44.1981 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:18:44.1981 Trace Initializing File Target[logfile]
+2019-03-12 10:18:44.1981 Trace FindReachableObject<NLog.Layouts.Layout>:
+2019-03-12 10:18:44.1981 Trace Scanning FileTarget 'File Target[logfile]'
+2019-03-12 10:18:44.1981 Trace  Scanning Property FileName ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2019-03-12 10:18:44.1981 Trace  Scanning SimpleLayout ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt''
+2019-03-12 10:18:44.1981 Trace  Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2019-03-12 10:18:44.1981 Trace  Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-03-12 10:18:44.1981 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2019-03-12 10:18:44.1981 Trace  Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2019-03-12 10:18:44.1981 Trace File Target[logfile] has 2 layouts
+2019-03-12 10:18:44.1981 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2019-03-12 10:18:44.2194 Debug Watching path 'C:\Users\User\source\vscode-repos\izibongo.api' filter 'nlog.config' for changes.
+2019-03-12 10:19:10.0724 Debug Targets for izibongo.api.Logger.LoggerService by level:
+2019-03-12 10:19:10.0734 Debug Trace =>
+2019-03-12 10:19:10.0734 Debug Debug => logfile
+2019-03-12 10:19:10.0734 Debug Info => logfile
+2019-03-12 10:19:10.0734 Debug Warn => logfile
+2019-03-12 10:19:10.0734 Debug Error => logfile
+2019-03-12 10:19:10.0734 Debug Fatal => logfile
+2019-03-12 10:19:10.1053 Debug FileTarget(Name=logfile): Process file 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-12_logfile.txt' on startup
+2019-03-12 10:19:10.1053 Debug Creating file appender: C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-12_logfile.txt
+2019-03-12 10:19:10.1053 Trace Opening C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-12_logfile.txt with allowFileSharedWriting=False
+2019-03-12 10:19:58.7078 Trace Opening C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-12_logfile.txt with allowFileSharedWriting=False
+2019-03-12 10:20:33.6306 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2019-03-12 10:20:33.6571 Debug Found assembly location directory: 'C:\Users\User\.nuget\packages\nlog\4.5.11\lib\netstandard2.0' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2019-03-12 10:20:33.6571 Debug Search for auto loading files in location: C:\Users\User\.nuget\packages\nlog\4.5.11\lib\netstandard2.0
+2019-03-12 10:20:33.6571 Debug Found assembly location directory: 'C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1' (izibongo.api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+2019-03-12 10:20:33.6571 Debug Search for auto loading files in location: C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1
+2019-03-12 10:20:33.6668 Debug Auto loading based on AppDomain-BaseDirectory found location: C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1
+2019-03-12 10:20:33.6668 Debug Search for auto loading files in location: C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1
+2019-03-12 10:20:33.6668 Debug Start auto loading, location: C:\Users\User\.nuget\packages\nlog\4.5.11\lib\netstandard2.0
+2019-03-12 10:20:33.6668 Trace Assembly 'Microsoft.Extensions.Logging, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2019-03-12 10:20:33.6668 Trace Assembly 'Microsoft.Extensions.Logging.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2019-03-12 10:20:33.6668 Debug Auto loading done
+2019-03-12 10:20:33.6668 Info Message Template Auto Format enabled
+2019-03-12 10:20:33.6668 Info Loading assembly: NLog.Extended
+2019-03-12 10:20:33.6984 Error Error loading extensions. Exception: System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'NLog.Extended, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark, IntPtr pPrivHostBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.XmlLoggingConfiguration.ParseExtensionWithAssembly(String assemblyName, String prefix)
+
+
+2019-03-12 10:20:33.6984 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Extended ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark, IntPtr pPrivHostBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.XmlLoggingConfiguration.ParseExtensionWithAssembly(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2019-03-12 10:20:33.7141 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:20:33.7141 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-12 10:20:33.7141 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2019-03-12 10:20:33.7341 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2019-03-12 10:20:33.7341 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:20:33.7341 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 10:20:33.7341 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:20:33.7341 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-12 10:20:33.7341 Trace  Scanning Property Culture '' System.Globalization
+2019-03-12 10:20:33.7341 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-12 10:20:33.7341 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-12 10:20:33.7341 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:20:33.7341 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 10:20:33.7341 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:20:33.7341 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2019-03-12 10:20:33.7453 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:20:33.7453 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-12 10:20:33.7453 Debug Setting 'FileTarget.name' to 'logfile'
+2019-03-12 10:20:33.7453 Debug Setting 'FileTarget.fileName' to 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'
+2019-03-12 10:20:33.7453 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:20:33.7453 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-03-12 10:20:33.7453 Debug Setting 'FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2019-03-12 10:20:33.7453 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:20:33.7453 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-12 10:20:33.7453 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2019-03-12 10:20:33.7453 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2019-03-12 10:20:33.7453 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:20:33.7453 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 10:20:33.7608 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:20:33.7608 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-12 10:20:33.7608 Trace  Scanning Property Culture '' System.Globalization
+2019-03-12 10:20:33.7608 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-12 10:20:33.7608 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-12 10:20:33.7608 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:20:33.7608 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 10:20:33.7608 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:20:33.7608 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-12 10:20:33.7608 Info Adding target File Target[logfile]
+2019-03-12 10:20:33.7608 Debug Registered target logfile: NLog.Targets.FileTarget
+2019-03-12 10:20:33.7608 Trace ParseRulesElement
+2019-03-12 10:20:33.7608 Info Configured from an XML element in C:\Users\User\source\vscode-repos\izibongo.api/nlog.config...
+2019-03-12 10:20:33.7820 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2019-03-12 10:20:33.7820 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2019-03-12 10:20:33.7820 Debug --- NLog configuration dump ---
+2019-03-12 10:20:33.7921 Debug Targets:
+2019-03-12 10:20:33.7921 Debug File Target[logfile]
+2019-03-12 10:20:33.7921 Debug Rules:
+2019-03-12 10:20:33.7921 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]
+2019-03-12 10:20:33.7921 Debug --- End of NLog configuration dump ---
+2019-03-12 10:20:33.7921 Trace FindReachableObject<System.Object>:
+2019-03-12 10:20:33.7921 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]'
+2019-03-12 10:20:33.7921 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2019-03-12 10:20:33.7921 Trace  Scanning FileTarget 'File Target[logfile]'
+2019-03-12 10:20:33.7921 Trace   Scanning Property FileName ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2019-03-12 10:20:33.7921 Trace   Scanning SimpleLayout ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt''
+2019-03-12 10:20:33.7921 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:20:33.7921 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:20:33.7921 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-03-12 10:20:33.7921 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:20:33.7921 Trace   Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2019-03-12 10:20:33.7921 Trace   Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-03-12 10:20:33.8071 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:20:33.8071 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-12 10:20:33.8071 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:20:33.8071 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-12 10:20:33.8071 Trace     Scanning Property Culture '' System.Globalization
+2019-03-12 10:20:33.8071 Trace     Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-12 10:20:33.8071 Trace     Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-12 10:20:33.8071 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:20:33.8071 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 10:20:33.8071 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:20:33.8071 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-12 10:20:33.8071 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2019-03-12 10:20:33.8071 Trace   Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2019-03-12 10:20:33.8071 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2019-03-12 10:20:33.8071 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2019-03-12 10:20:33.8071 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2019-03-12 10:20:33.8071 Info Found 14 configuration items
+2019-03-12 10:20:33.8071 Trace Initializing Layout Renderer: ${message}
+2019-03-12 10:20:33.8071 Trace Initializing Layout Renderer: ${literal}
+2019-03-12 10:20:33.8071 Trace Initializing Layout Renderer: ${level}
+2019-03-12 10:20:33.8071 Trace Initializing SimpleLayout=Layout Renderer: ${level}
+2019-03-12 10:20:33.8071 Trace FindReachableObject<System.Object>:
+2019-03-12 10:20:33.8231 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-12 10:20:33.8231 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:20:33.8231 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 10:20:33.8231 Trace Initializing Layout Renderer: ${uppercase}
+2019-03-12 10:20:33.8231 Trace Initializing Layout Renderer: ${literal}
+2019-03-12 10:20:33.8231 Trace Initializing Layout Renderer: ${longdate}
+2019-03-12 10:20:33.8231 Trace Initializing '${longdate} ${level:uppercase=true} ${message}'
+2019-03-12 10:20:33.8231 Trace FindReachableObject<System.Object>:
+2019-03-12 10:20:33.8231 Trace Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-03-12 10:20:33.8231 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:20:33.8231 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-12 10:20:33.8231 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:20:33.8231 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-12 10:20:33.8231 Trace   Scanning Property Culture '' System.Globalization
+2019-03-12 10:20:33.8231 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-12 10:20:33.8231 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-12 10:20:33.8231 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:20:33.8231 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 10:20:33.8231 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:20:33.8231 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-12 10:20:33.8231 Trace Initializing Layout Renderer: ${literal}
+2019-03-12 10:20:33.8231 Trace Initializing Layout Renderer: ${shortdate}
+2019-03-12 10:20:33.8231 Trace Initializing Layout Renderer: ${literal}
+2019-03-12 10:20:33.8231 Trace Initializing 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'
+2019-03-12 10:20:33.8231 Trace FindReachableObject<System.Object>:
+2019-03-12 10:20:33.8389 Trace Scanning SimpleLayout ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt''
+2019-03-12 10:20:33.8389 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:20:33.8389 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:20:33.8389 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-03-12 10:20:33.8389 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:20:33.8389 Trace Initializing File Target[logfile]
+2019-03-12 10:20:33.8389 Trace FindReachableObject<NLog.Layouts.Layout>:
+2019-03-12 10:20:33.8389 Trace Scanning FileTarget 'File Target[logfile]'
+2019-03-12 10:20:33.8389 Trace  Scanning Property FileName ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2019-03-12 10:20:33.8389 Trace  Scanning SimpleLayout ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt''
+2019-03-12 10:20:33.8389 Trace  Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2019-03-12 10:20:33.8389 Trace  Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-03-12 10:20:33.8389 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2019-03-12 10:20:33.8389 Trace  Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2019-03-12 10:20:33.8389 Trace File Target[logfile] has 2 layouts
+2019-03-12 10:20:33.8389 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2019-03-12 10:20:33.8571 Debug Watching path 'C:\Users\User\source\vscode-repos\izibongo.api' filter 'nlog.config' for changes.
+2019-03-12 10:20:48.3726 Debug Targets for izibongo.api.Logger.LoggerService by level:
+2019-03-12 10:20:48.3997 Debug Trace =>
+2019-03-12 10:20:48.4013 Debug Debug => logfile
+2019-03-12 10:20:48.4013 Debug Info => logfile
+2019-03-12 10:20:48.4013 Debug Warn => logfile
+2019-03-12 10:20:48.4013 Debug Error => logfile
+2019-03-12 10:20:48.4013 Debug Fatal => logfile
+2019-03-12 10:20:48.4365 Debug FileTarget(Name=logfile): Process file 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-12_logfile.txt' on startup
+2019-03-12 10:20:48.4365 Debug Creating file appender: C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-12_logfile.txt
+2019-03-12 10:20:48.4529 Trace Opening C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-12_logfile.txt with allowFileSharedWriting=False
+2019-03-12 10:21:48.4296 Trace Opening C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-12_logfile.txt with allowFileSharedWriting=False
+2019-03-12 10:22:16.7195 Trace Opening C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-12_logfile.txt with allowFileSharedWriting=False
+2019-03-12 10:31:21.5443 Info Shutting down logging...
+2019-03-12 10:31:21.5443 Debug Stopping file watching for path 'C:\Users\User\source\vscode-repos\izibongo.api' filter 'nlog.config'
+2019-03-12 10:31:21.5443 Trace Flushing all targets...
+2019-03-12 10:31:21.5443 Trace ForEachItemInParallel() 1 items
+2019-03-12 10:31:21.5607 Trace FileTarget(Name=logfile): FlushAsync
+2019-03-12 10:31:21.5607 Trace Continuation invoked: 
+2019-03-12 10:31:21.5607 Trace Parallel task completed. 0 items remaining
+2019-03-12 10:31:21.5607 Trace FileTarget(Name=logfile): FlushAsync Done
+2019-03-12 10:31:21.5607 Debug Targets for izibongo.api.Logger.LoggerService by level:
+2019-03-12 10:31:21.5607 Debug Trace =>
+2019-03-12 10:31:21.5607 Debug Debug =>
+2019-03-12 10:31:21.5607 Debug Info =>
+2019-03-12 10:31:21.5607 Debug Warn =>
+2019-03-12 10:31:21.5607 Debug Error =>
+2019-03-12 10:31:21.5607 Debug Fatal =>
+2019-03-12 10:31:21.5607 Debug Closing logging configuration...
+2019-03-12 10:31:21.5741 Trace Closing File Target[logfile]
+2019-03-12 10:31:21.5741 Debug Closing target 'File Target[logfile]'.
+2019-03-12 10:31:21.5741 Trace FileTarget(Name=logfile): FinalizeFile 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-12_logfile.txt, isArchiving: False'
+2019-03-12 10:31:21.5741 Debug FileAppender Closing Invalidate - C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-12_logfile.txt
+2019-03-12 10:31:21.5741 Debug Closed target 'File Target[logfile]'.
+2019-03-12 10:31:21.5890 Trace Closing 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'
+2019-03-12 10:31:21.5890 Trace Closing Layout Renderer: ${literal}
+2019-03-12 10:31:21.5890 Trace Closing Layout Renderer: ${shortdate}
+2019-03-12 10:31:21.5890 Trace Closing Layout Renderer: ${literal}
+2019-03-12 10:31:21.5890 Trace Closing '${longdate} ${level:uppercase=true} ${message}'
+2019-03-12 10:31:21.5890 Trace Closing Layout Renderer: ${longdate}
+2019-03-12 10:31:21.5890 Trace Closing Layout Renderer: ${literal}
+2019-03-12 10:31:21.5890 Trace Closing Layout Renderer: ${uppercase}
+2019-03-12 10:31:21.5890 Trace Closing SimpleLayout=Layout Renderer: ${level}
+2019-03-12 10:31:21.5890 Trace Closing Layout Renderer: ${level}
+2019-03-12 10:31:21.5890 Trace Closing Layout Renderer: ${literal}
+2019-03-12 10:31:21.5890 Trace Closing Layout Renderer: ${message}
+2019-03-12 10:31:21.5890 Debug Finished closing logging configuration.
+2019-03-12 10:31:21.5890 Info Logger has been shut down.
+2019-03-12 10:31:35.9613 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2019-03-12 10:31:35.9924 Debug Found assembly location directory: 'C:\Users\User\.nuget\packages\nlog\4.5.11\lib\netstandard2.0' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2019-03-12 10:31:35.9950 Debug Search for auto loading files in location: C:\Users\User\.nuget\packages\nlog\4.5.11\lib\netstandard2.0
+2019-03-12 10:31:35.9950 Debug Found assembly location directory: 'C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1' (izibongo.api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+2019-03-12 10:31:35.9950 Debug Search for auto loading files in location: C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1
+2019-03-12 10:31:35.9950 Debug Auto loading based on AppDomain-BaseDirectory found location: C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1
+2019-03-12 10:31:35.9950 Debug Search for auto loading files in location: C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1
+2019-03-12 10:31:35.9950 Debug Start auto loading, location: C:\Users\User\.nuget\packages\nlog\4.5.11\lib\netstandard2.0
+2019-03-12 10:31:35.9950 Trace Assembly 'Microsoft.Extensions.Logging, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2019-03-12 10:31:35.9950 Trace Assembly 'Microsoft.Extensions.Logging.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2019-03-12 10:31:35.9950 Debug Auto loading done
+2019-03-12 10:31:35.9950 Info Message Template Auto Format enabled
+2019-03-12 10:31:36.0118 Info Loading assembly: NLog.Extended
+2019-03-12 10:31:36.0321 Error Error loading extensions. Exception: System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'NLog.Extended, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark, IntPtr pPrivHostBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.XmlLoggingConfiguration.ParseExtensionWithAssembly(String assemblyName, String prefix)
+
+
+2019-03-12 10:31:36.0321 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Extended ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark, IntPtr pPrivHostBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.XmlLoggingConfiguration.ParseExtensionWithAssembly(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2019-03-12 10:31:36.0471 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:31:36.0471 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-12 10:31:36.0471 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2019-03-12 10:31:36.0630 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2019-03-12 10:31:36.0630 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:31:36.0630 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 10:31:36.0630 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:31:36.0630 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-12 10:31:36.0630 Trace  Scanning Property Culture '' System.Globalization
+2019-03-12 10:31:36.0630 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-12 10:31:36.0630 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-12 10:31:36.0630 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:31:36.0630 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 10:31:36.0630 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:31:36.0630 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2019-03-12 10:31:36.0731 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:31:36.0731 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-12 10:31:36.0731 Debug Setting 'FileTarget.name' to 'logfile'
+2019-03-12 10:31:36.0731 Debug Setting 'FileTarget.fileName' to 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'
+2019-03-12 10:31:36.0731 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:31:36.0731 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-03-12 10:31:36.0731 Debug Setting 'FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2019-03-12 10:31:36.0731 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:31:36.0731 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-12 10:31:36.0731 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2019-03-12 10:31:36.0731 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2019-03-12 10:31:36.0731 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:31:36.0731 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 10:31:36.0731 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:31:36.0731 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-12 10:31:36.0731 Trace  Scanning Property Culture '' System.Globalization
+2019-03-12 10:31:36.0731 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-12 10:31:36.0731 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-12 10:31:36.0884 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:31:36.0884 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 10:31:36.0884 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 10:31:36.0884 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-12 10:31:36.0884 Info Adding target File Target[logfile]
+2019-03-12 10:31:36.0884 Debug Registered target logfile: NLog.Targets.FileTarget
+2019-03-12 10:31:36.0884 Trace ParseRulesElement
+2019-03-12 10:31:36.0884 Info Configured from an XML element in C:\Users\User\source\vscode-repos\izibongo.api/nlog.config...
+2019-03-12 10:31:36.1049 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2019-03-12 10:31:36.1049 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2019-03-12 10:31:36.1049 Debug --- NLog configuration dump ---
+2019-03-12 10:31:36.1049 Debug Targets:
+2019-03-12 10:31:36.1049 Debug File Target[logfile]
+2019-03-12 10:31:36.1049 Debug Rules:
+2019-03-12 10:31:36.1049 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]
+2019-03-12 10:31:36.1049 Debug --- End of NLog configuration dump ---
+2019-03-12 10:31:36.1207 Trace FindReachableObject<System.Object>:
+2019-03-12 10:31:36.1207 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]'
+2019-03-12 10:31:36.1207 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2019-03-12 10:31:36.1207 Trace  Scanning FileTarget 'File Target[logfile]'
+2019-03-12 10:31:36.1207 Trace   Scanning Property FileName ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2019-03-12 10:31:36.1207 Trace   Scanning SimpleLayout ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt''
+2019-03-12 10:31:36.1207 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:31:36.1207 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:31:36.1207 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-03-12 10:31:36.1207 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:31:36.1207 Trace   Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2019-03-12 10:31:36.1207 Trace   Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-03-12 10:31:36.1207 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:31:36.1207 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-12 10:31:36.1207 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:31:36.1207 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-12 10:31:36.1207 Trace     Scanning Property Culture '' System.Globalization
+2019-03-12 10:31:36.1207 Trace     Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-12 10:31:36.1207 Trace     Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-12 10:31:36.1207 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:31:36.1207 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 10:31:36.1207 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:31:36.1207 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-12 10:31:36.1207 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2019-03-12 10:31:36.1207 Trace   Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2019-03-12 10:31:36.1207 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2019-03-12 10:31:36.1207 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2019-03-12 10:31:36.1357 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2019-03-12 10:31:36.1357 Info Found 14 configuration items
+2019-03-12 10:31:36.1357 Trace Initializing Layout Renderer: ${message}
+2019-03-12 10:31:36.1357 Trace Initializing Layout Renderer: ${literal}
+2019-03-12 10:31:36.1357 Trace Initializing Layout Renderer: ${level}
+2019-03-12 10:31:36.1357 Trace Initializing SimpleLayout=Layout Renderer: ${level}
+2019-03-12 10:31:36.1357 Trace FindReachableObject<System.Object>:
+2019-03-12 10:31:36.1357 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-12 10:31:36.1357 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:31:36.1357 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 10:31:36.1357 Trace Initializing Layout Renderer: ${uppercase}
+2019-03-12 10:31:36.1357 Trace Initializing Layout Renderer: ${literal}
+2019-03-12 10:31:36.1357 Trace Initializing Layout Renderer: ${longdate}
+2019-03-12 10:31:36.1357 Trace Initializing '${longdate} ${level:uppercase=true} ${message}'
+2019-03-12 10:31:36.1357 Trace FindReachableObject<System.Object>:
+2019-03-12 10:31:36.1357 Trace Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-03-12 10:31:36.1357 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:31:36.1357 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-12 10:31:36.1357 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:31:36.1514 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-12 10:31:36.1514 Trace   Scanning Property Culture '' System.Globalization
+2019-03-12 10:31:36.1514 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-12 10:31:36.1514 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-12 10:31:36.1514 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:31:36.1514 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 10:31:36.1514 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:31:36.1514 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-12 10:31:36.1514 Trace Initializing Layout Renderer: ${literal}
+2019-03-12 10:31:36.1514 Trace Initializing Layout Renderer: ${shortdate}
+2019-03-12 10:31:36.1514 Trace Initializing Layout Renderer: ${literal}
+2019-03-12 10:31:36.1514 Trace Initializing 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'
+2019-03-12 10:31:36.1514 Trace FindReachableObject<System.Object>:
+2019-03-12 10:31:36.1514 Trace Scanning SimpleLayout ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt''
+2019-03-12 10:31:36.1514 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 10:31:36.1514 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:31:36.1514 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-03-12 10:31:36.1514 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 10:31:36.1514 Trace Initializing File Target[logfile]
+2019-03-12 10:31:36.1690 Trace FindReachableObject<NLog.Layouts.Layout>:
+2019-03-12 10:31:36.1690 Trace Scanning FileTarget 'File Target[logfile]'
+2019-03-12 10:31:36.1690 Trace  Scanning Property FileName ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2019-03-12 10:31:36.1690 Trace  Scanning SimpleLayout ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt''
+2019-03-12 10:31:36.1690 Trace  Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2019-03-12 10:31:36.1690 Trace  Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-03-12 10:31:36.1690 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2019-03-12 10:31:36.1690 Trace  Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2019-03-12 10:31:36.1690 Trace File Target[logfile] has 2 layouts
+2019-03-12 10:31:36.1690 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2019-03-12 10:31:36.1690 Debug Watching path 'C:\Users\User\source\vscode-repos\izibongo.api' filter 'nlog.config' for changes.
+2019-03-12 10:32:06.5150 Debug Targets for izibongo.api.Logger.LoggerService by level:
+2019-03-12 10:32:06.5150 Debug Trace =>
+2019-03-12 10:32:06.5150 Debug Debug => logfile
+2019-03-12 10:32:06.5150 Debug Info => logfile
+2019-03-12 10:32:06.5150 Debug Warn => logfile
+2019-03-12 10:32:06.5150 Debug Error => logfile
+2019-03-12 10:32:06.5150 Debug Fatal => logfile
+2019-03-12 10:32:06.5445 Debug FileTarget(Name=logfile): Process file 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-12_logfile.txt' on startup
+2019-03-12 10:32:06.5445 Debug Creating file appender: C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-12_logfile.txt
+2019-03-12 10:32:06.5609 Trace Opening C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-12_logfile.txt with allowFileSharedWriting=False
+2019-03-12 11:00:32.9173 Info Shutting down logging...
+2019-03-12 11:00:32.9173 Debug Stopping file watching for path 'C:\Users\User\source\vscode-repos\izibongo.api' filter 'nlog.config'
+2019-03-12 11:00:32.9372 Trace Flushing all targets...
+2019-03-12 11:00:32.9372 Trace ForEachItemInParallel() 1 items
+2019-03-12 11:00:32.9372 Trace FileTarget(Name=logfile): FlushAsync
+2019-03-12 11:00:32.9372 Trace Continuation invoked: 
+2019-03-12 11:00:32.9372 Trace Parallel task completed. 0 items remaining
+2019-03-12 11:00:32.9484 Trace FileTarget(Name=logfile): FlushAsync Done
+2019-03-12 11:00:32.9484 Debug Targets for izibongo.api.Logger.LoggerService by level:
+2019-03-12 11:00:32.9484 Debug Trace =>
+2019-03-12 11:00:32.9484 Debug Debug =>
+2019-03-12 11:00:32.9484 Debug Info =>
+2019-03-12 11:00:32.9484 Debug Warn =>
+2019-03-12 11:00:32.9484 Debug Error =>
+2019-03-12 11:00:32.9484 Debug Fatal =>
+2019-03-12 11:00:32.9484 Debug Closing logging configuration...
+2019-03-12 11:00:32.9484 Trace Closing File Target[logfile]
+2019-03-12 11:00:32.9484 Debug Closing target 'File Target[logfile]'.
+2019-03-12 11:00:32.9484 Trace FileTarget(Name=logfile): FinalizeFile 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-12_logfile.txt, isArchiving: False'
+2019-03-12 11:00:32.9661 Debug FileAppender Closing Invalidate - C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-12_logfile.txt
+2019-03-12 11:00:32.9661 Debug Closed target 'File Target[logfile]'.
+2019-03-12 11:00:32.9661 Trace Closing 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'
+2019-03-12 11:00:32.9661 Trace Closing Layout Renderer: ${literal}
+2019-03-12 11:00:32.9661 Trace Closing Layout Renderer: ${shortdate}
+2019-03-12 11:00:32.9661 Trace Closing Layout Renderer: ${literal}
+2019-03-12 11:00:32.9661 Trace Closing '${longdate} ${level:uppercase=true} ${message}'
+2019-03-12 11:00:32.9661 Trace Closing Layout Renderer: ${longdate}
+2019-03-12 11:00:32.9661 Trace Closing Layout Renderer: ${literal}
+2019-03-12 11:00:32.9661 Trace Closing Layout Renderer: ${uppercase}
+2019-03-12 11:00:32.9661 Trace Closing SimpleLayout=Layout Renderer: ${level}
+2019-03-12 11:00:32.9788 Trace Closing Layout Renderer: ${level}
+2019-03-12 11:00:32.9788 Trace Closing Layout Renderer: ${literal}
+2019-03-12 11:00:32.9788 Trace Closing Layout Renderer: ${message}
+2019-03-12 11:00:32.9788 Debug Finished closing logging configuration.
+2019-03-12 11:00:32.9788 Info Logger has been shut down.
+2019-03-12 11:17:31.4346 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2019-03-12 11:17:31.4630 Debug Found assembly location directory: 'C:\Users\User\.nuget\packages\nlog\4.5.11\lib\netstandard2.0' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2019-03-12 11:17:31.4654 Debug Search for auto loading files in location: C:\Users\User\.nuget\packages\nlog\4.5.11\lib\netstandard2.0
+2019-03-12 11:17:31.4654 Debug Found assembly location directory: 'C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1' (izibongo.api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+2019-03-12 11:17:31.4654 Debug Search for auto loading files in location: C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1
+2019-03-12 11:17:31.4654 Debug Auto loading based on AppDomain-BaseDirectory found location: C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1
+2019-03-12 11:17:31.4654 Debug Search for auto loading files in location: C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1
+2019-03-12 11:17:31.4654 Debug Start auto loading, location: C:\Users\User\.nuget\packages\nlog\4.5.11\lib\netstandard2.0
+2019-03-12 11:17:31.4654 Trace Assembly 'Microsoft.Extensions.Logging, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2019-03-12 11:17:31.4654 Trace Assembly 'Microsoft.Extensions.Logging.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2019-03-12 11:17:31.4654 Debug Auto loading done
+2019-03-12 11:17:31.4654 Info Message Template Auto Format enabled
+2019-03-12 11:17:31.4844 Info Loading assembly: NLog.Extended
+2019-03-12 11:17:31.5059 Error Error loading extensions. Exception: System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'NLog.Extended, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark, IntPtr pPrivHostBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.XmlLoggingConfiguration.ParseExtensionWithAssembly(String assemblyName, String prefix)
+
+
+2019-03-12 11:17:31.5059 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Extended ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark, IntPtr pPrivHostBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.XmlLoggingConfiguration.ParseExtensionWithAssembly(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2019-03-12 11:17:31.5218 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 11:17:31.5218 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-12 11:17:31.5316 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2019-03-12 11:17:31.5316 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2019-03-12 11:17:31.5316 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 11:17:31.5419 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 11:17:31.5419 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 11:17:31.5419 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-12 11:17:31.5419 Trace  Scanning Property Culture '' System.Globalization
+2019-03-12 11:17:31.5419 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-12 11:17:31.5419 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-12 11:17:31.5419 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 11:17:31.5419 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 11:17:31.5419 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 11:17:31.5419 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2019-03-12 11:17:31.5419 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 11:17:31.5419 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-12 11:17:31.5581 Debug Setting 'FileTarget.name' to 'logfile'
+2019-03-12 11:17:31.5581 Debug Setting 'FileTarget.fileName' to 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'
+2019-03-12 11:17:31.5581 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 11:17:31.5581 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-03-12 11:17:31.5581 Debug Setting 'FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2019-03-12 11:17:31.5581 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 11:17:31.5581 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-12 11:17:31.5581 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2019-03-12 11:17:31.5581 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2019-03-12 11:17:31.5581 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 11:17:31.5581 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 11:17:31.5581 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 11:17:31.5581 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-12 11:17:31.5581 Trace  Scanning Property Culture '' System.Globalization
+2019-03-12 11:17:31.5581 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-12 11:17:31.5581 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-12 11:17:31.5581 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 11:17:31.5581 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 11:17:31.5581 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-12 11:17:31.5581 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-12 11:17:31.5581 Info Adding target File Target[logfile]
+2019-03-12 11:17:31.5581 Debug Registered target logfile: NLog.Targets.FileTarget
+2019-03-12 11:17:31.5581 Trace ParseRulesElement
+2019-03-12 11:17:31.5797 Info Configured from an XML element in C:\Users\User\source\vscode-repos\izibongo.api/nlog.config...
+2019-03-12 11:17:31.5797 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2019-03-12 11:17:31.5914 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2019-03-12 11:17:31.5914 Debug --- NLog configuration dump ---
+2019-03-12 11:17:31.5914 Debug Targets:
+2019-03-12 11:17:31.5914 Debug File Target[logfile]
+2019-03-12 11:17:31.5914 Debug Rules:
+2019-03-12 11:17:31.5914 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]
+2019-03-12 11:17:31.5914 Debug --- End of NLog configuration dump ---
+2019-03-12 11:17:31.5914 Trace FindReachableObject<System.Object>:
+2019-03-12 11:17:31.5914 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]'
+2019-03-12 11:17:31.5914 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2019-03-12 11:17:31.5914 Trace  Scanning FileTarget 'File Target[logfile]'
+2019-03-12 11:17:31.5914 Trace   Scanning Property FileName ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2019-03-12 11:17:31.6045 Trace   Scanning SimpleLayout ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt''
+2019-03-12 11:17:31.6045 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 11:17:31.6045 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 11:17:31.6045 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-03-12 11:17:31.6045 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 11:17:31.6045 Trace   Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2019-03-12 11:17:31.6045 Trace   Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-03-12 11:17:31.6045 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 11:17:31.6045 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-12 11:17:31.6045 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 11:17:31.6045 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-12 11:17:31.6045 Trace     Scanning Property Culture '' System.Globalization
+2019-03-12 11:17:31.6045 Trace     Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-12 11:17:31.6045 Trace     Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-12 11:17:31.6045 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 11:17:31.6045 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 11:17:31.6045 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 11:17:31.6045 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-12 11:17:31.6045 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2019-03-12 11:17:31.6045 Trace   Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2019-03-12 11:17:31.6045 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2019-03-12 11:17:31.6045 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2019-03-12 11:17:31.6045 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2019-03-12 11:17:31.6045 Info Found 14 configuration items
+2019-03-12 11:17:31.6045 Trace Initializing Layout Renderer: ${message}
+2019-03-12 11:17:31.6211 Trace Initializing Layout Renderer: ${literal}
+2019-03-12 11:17:31.6211 Trace Initializing Layout Renderer: ${level}
+2019-03-12 11:17:31.6211 Trace Initializing SimpleLayout=Layout Renderer: ${level}
+2019-03-12 11:17:31.6211 Trace FindReachableObject<System.Object>:
+2019-03-12 11:17:31.6211 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-12 11:17:31.6211 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 11:17:31.6211 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 11:17:31.6211 Trace Initializing Layout Renderer: ${uppercase}
+2019-03-12 11:17:31.6211 Trace Initializing Layout Renderer: ${literal}
+2019-03-12 11:17:31.6211 Trace Initializing Layout Renderer: ${longdate}
+2019-03-12 11:17:31.6211 Trace Initializing '${longdate} ${level:uppercase=true} ${message}'
+2019-03-12 11:17:31.6211 Trace FindReachableObject<System.Object>:
+2019-03-12 11:17:31.6211 Trace Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-03-12 11:17:31.6211 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 11:17:31.6211 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-12 11:17:31.6211 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 11:17:31.6211 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-12 11:17:31.6211 Trace   Scanning Property Culture '' System.Globalization
+2019-03-12 11:17:31.6211 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-12 11:17:31.6355 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-12 11:17:31.6355 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 11:17:31.6355 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-12 11:17:31.6355 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 11:17:31.6355 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-12 11:17:31.6355 Trace Initializing Layout Renderer: ${literal}
+2019-03-12 11:17:31.6355 Trace Initializing Layout Renderer: ${shortdate}
+2019-03-12 11:17:31.6355 Trace Initializing Layout Renderer: ${literal}
+2019-03-12 11:17:31.6355 Trace Initializing 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'
+2019-03-12 11:17:31.6355 Trace FindReachableObject<System.Object>:
+2019-03-12 11:17:31.6355 Trace Scanning SimpleLayout ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt''
+2019-03-12 11:17:31.6355 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-12 11:17:31.6355 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 11:17:31.6355 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-03-12 11:17:31.6355 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-12 11:17:31.6355 Trace Initializing File Target[logfile]
+2019-03-12 11:17:31.6355 Trace FindReachableObject<NLog.Layouts.Layout>:
+2019-03-12 11:17:31.6355 Trace Scanning FileTarget 'File Target[logfile]'
+2019-03-12 11:17:31.6355 Trace  Scanning Property FileName ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2019-03-12 11:17:31.6355 Trace  Scanning SimpleLayout ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt''
+2019-03-12 11:17:31.6355 Trace  Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2019-03-12 11:17:31.6355 Trace  Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-03-12 11:17:31.6355 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2019-03-12 11:17:31.6355 Trace  Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2019-03-12 11:17:31.6355 Trace File Target[logfile] has 2 layouts
+2019-03-12 11:17:31.6523 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2019-03-12 11:17:31.6523 Debug Watching path 'C:\Users\User\source\vscode-repos\izibongo.api' filter 'nlog.config' for changes.
+2019-03-12 11:18:06.6160 Info Shutting down logging...
+2019-03-12 11:18:06.6206 Debug Stopping file watching for path 'C:\Users\User\source\vscode-repos\izibongo.api' filter 'nlog.config'
+2019-03-12 11:18:06.6206 Trace Flushing all targets...
+2019-03-12 11:18:06.6206 Trace ForEachItemInParallel() 1 items
+2019-03-12 11:18:06.6405 Trace FileTarget(Name=logfile): FlushAsync
+2019-03-12 11:18:06.6539 Trace Continuation invoked: 
+2019-03-12 11:18:06.6539 Trace Parallel task completed. 0 items remaining
+2019-03-12 11:18:06.6539 Trace FileTarget(Name=logfile): FlushAsync Done
+2019-03-12 11:18:06.6539 Debug Closing logging configuration...
+2019-03-12 11:18:06.6539 Trace Closing File Target[logfile]
+2019-03-12 11:18:06.6539 Debug Closing target 'File Target[logfile]'.
+2019-03-12 11:18:06.6680 Debug Closed target 'File Target[logfile]'.
+2019-03-12 11:18:06.6680 Trace Closing 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'
+2019-03-12 11:18:06.6680 Trace Closing Layout Renderer: ${literal}
+2019-03-12 11:18:06.6680 Trace Closing Layout Renderer: ${shortdate}
+2019-03-12 11:18:06.6680 Trace Closing Layout Renderer: ${literal}
+2019-03-12 11:18:06.6680 Trace Closing '${longdate} ${level:uppercase=true} ${message}'
+2019-03-12 11:18:06.6680 Trace Closing Layout Renderer: ${longdate}
+2019-03-12 11:18:06.6680 Trace Closing Layout Renderer: ${literal}
+2019-03-12 11:18:06.6680 Trace Closing Layout Renderer: ${uppercase}
+2019-03-12 11:18:06.6680 Trace Closing SimpleLayout=Layout Renderer: ${level}
+2019-03-12 11:18:06.6680 Trace Closing Layout Renderer: ${level}
+2019-03-12 11:18:06.6680 Trace Closing Layout Renderer: ${literal}
+2019-03-12 11:18:06.6680 Trace Closing Layout Renderer: ${message}
+2019-03-12 11:18:06.6833 Debug Finished closing logging configuration.
+2019-03-12 11:18:06.6833 Info Logger has been shut down.
+2019-03-13 15:31:50.4878 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2019-03-13 15:31:50.5774 Debug Found assembly location directory: 'C:\Users\User\.nuget\packages\nlog\4.5.11\lib\netstandard2.0' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2019-03-13 15:31:50.5774 Debug Search for auto loading files in location: C:\Users\User\.nuget\packages\nlog\4.5.11\lib\netstandard2.0
+2019-03-13 15:31:50.5774 Debug Found assembly location directory: 'C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1' (izibongo.api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+2019-03-13 15:31:50.5774 Debug Search for auto loading files in location: C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1
+2019-03-13 15:31:50.5774 Debug Auto loading based on AppDomain-BaseDirectory found location: C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1
+2019-03-13 15:31:50.5774 Debug Search for auto loading files in location: C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1
+2019-03-13 15:31:50.5882 Debug Start auto loading, location: C:\Users\User\.nuget\packages\nlog\4.5.11\lib\netstandard2.0
+2019-03-13 15:31:50.5882 Trace Assembly 'Microsoft.Extensions.Logging, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2019-03-13 15:31:50.5882 Trace Assembly 'Microsoft.Extensions.Logging.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2019-03-13 15:31:50.5882 Debug Auto loading done
+2019-03-13 15:31:50.5882 Info Message Template Auto Format enabled
+2019-03-13 15:31:50.6053 Info Loading assembly: NLog.Extended
+2019-03-13 15:31:50.9014 Error Error loading extensions. Exception: System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'NLog.Extended, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark, IntPtr pPrivHostBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.XmlLoggingConfiguration.ParseExtensionWithAssembly(String assemblyName, String prefix)
+
+
+2019-03-13 15:31:50.9014 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Extended ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark, IntPtr pPrivHostBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.XmlLoggingConfiguration.ParseExtensionWithAssembly(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2019-03-13 15:31:50.9204 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 15:31:50.9204 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-13 15:31:50.9204 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2019-03-13 15:31:50.9423 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2019-03-13 15:31:50.9423 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 15:31:50.9423 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-13 15:31:50.9423 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 15:31:50.9423 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-13 15:31:50.9423 Trace  Scanning Property Culture '' System.Globalization
+2019-03-13 15:31:50.9483 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-13 15:31:50.9483 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-13 15:31:50.9483 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 15:31:50.9483 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-13 15:31:50.9483 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 15:31:50.9483 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2019-03-13 15:31:50.9483 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 15:31:50.9483 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-13 15:31:50.9483 Debug Setting 'FileTarget.name' to 'logfile'
+2019-03-13 15:31:50.9629 Debug Setting 'FileTarget.fileName' to 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'
+2019-03-13 15:31:50.9629 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 15:31:50.9629 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-03-13 15:31:50.9629 Debug Setting 'FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2019-03-13 15:31:50.9629 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 15:31:50.9629 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-13 15:31:50.9629 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2019-03-13 15:31:50.9629 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2019-03-13 15:31:50.9629 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 15:31:50.9629 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-13 15:31:50.9629 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 15:31:50.9629 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-13 15:31:50.9629 Trace  Scanning Property Culture '' System.Globalization
+2019-03-13 15:31:50.9629 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-13 15:31:50.9629 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-13 15:31:50.9629 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 15:31:50.9629 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-13 15:31:50.9629 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 15:31:50.9629 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-13 15:31:50.9629 Info Adding target File Target[logfile]
+2019-03-13 15:31:50.9629 Debug Registered target logfile: NLog.Targets.FileTarget
+2019-03-13 15:31:50.9629 Trace ParseRulesElement
+2019-03-13 15:31:50.9852 Info Configured from an XML element in C:\Users\User\source\vscode-repos\izibongo.api/nlog.config...
+2019-03-13 15:31:50.9852 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2019-03-13 15:31:50.9994 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2019-03-13 15:31:50.9994 Debug --- NLog configuration dump ---
+2019-03-13 15:31:50.9994 Debug Targets:
+2019-03-13 15:31:50.9994 Debug File Target[logfile]
+2019-03-13 15:31:50.9994 Debug Rules:
+2019-03-13 15:31:50.9994 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]
+2019-03-13 15:31:50.9994 Debug --- End of NLog configuration dump ---
+2019-03-13 15:31:51.0098 Trace FindReachableObject<System.Object>:
+2019-03-13 15:31:51.0098 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]'
+2019-03-13 15:31:51.0098 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2019-03-13 15:31:51.0098 Trace  Scanning FileTarget 'File Target[logfile]'
+2019-03-13 15:31:51.0098 Trace   Scanning Property FileName ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2019-03-13 15:31:51.0098 Trace   Scanning SimpleLayout ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt''
+2019-03-13 15:31:51.0098 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 15:31:51.0098 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 15:31:51.0098 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-03-13 15:31:51.0098 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 15:31:51.0098 Trace   Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2019-03-13 15:31:51.0098 Trace   Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-03-13 15:31:51.0098 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 15:31:51.0098 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-13 15:31:51.0098 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 15:31:51.0098 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-13 15:31:51.0098 Trace     Scanning Property Culture '' System.Globalization
+2019-03-13 15:31:51.0098 Trace     Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-13 15:31:51.0098 Trace     Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-13 15:31:51.0098 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 15:31:51.0098 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-13 15:31:51.0098 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 15:31:51.0098 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-13 15:31:51.0250 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2019-03-13 15:31:51.0250 Trace   Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2019-03-13 15:31:51.0250 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2019-03-13 15:31:51.0250 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2019-03-13 15:31:51.0250 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2019-03-13 15:31:51.0250 Info Found 14 configuration items
+2019-03-13 15:31:51.0250 Trace Initializing Layout Renderer: ${message}
+2019-03-13 15:31:51.0250 Trace Initializing Layout Renderer: ${literal}
+2019-03-13 15:31:51.0250 Trace Initializing Layout Renderer: ${level}
+2019-03-13 15:31:51.0250 Trace Initializing SimpleLayout=Layout Renderer: ${level}
+2019-03-13 15:31:51.0250 Trace FindReachableObject<System.Object>:
+2019-03-13 15:31:51.0250 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-13 15:31:51.0250 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 15:31:51.0250 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-13 15:31:51.0433 Trace Initializing Layout Renderer: ${uppercase}
+2019-03-13 15:31:51.0433 Trace Initializing Layout Renderer: ${literal}
+2019-03-13 15:31:51.0433 Trace Initializing Layout Renderer: ${longdate}
+2019-03-13 15:31:51.0433 Trace Initializing '${longdate} ${level:uppercase=true} ${message}'
+2019-03-13 15:31:51.0433 Trace FindReachableObject<System.Object>:
+2019-03-13 15:31:51.0433 Trace Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-03-13 15:31:51.0433 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 15:31:51.0433 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-13 15:31:51.0433 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 15:31:51.0433 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-13 15:31:51.0433 Trace   Scanning Property Culture '' System.Globalization
+2019-03-13 15:31:51.0433 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-13 15:31:51.0433 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-13 15:31:51.0433 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 15:31:51.0433 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-13 15:31:51.0433 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 15:31:51.0433 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-13 15:31:51.0433 Trace Initializing Layout Renderer: ${literal}
+2019-03-13 15:31:51.0433 Trace Initializing Layout Renderer: ${shortdate}
+2019-03-13 15:31:51.0433 Trace Initializing Layout Renderer: ${literal}
+2019-03-13 15:31:51.0433 Trace Initializing 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'
+2019-03-13 15:31:51.0433 Trace FindReachableObject<System.Object>:
+2019-03-13 15:31:51.0564 Trace Scanning SimpleLayout ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt''
+2019-03-13 15:31:51.0564 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 15:31:51.0564 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 15:31:51.0564 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-03-13 15:31:51.0564 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 15:31:51.0564 Trace Initializing File Target[logfile]
+2019-03-13 15:31:51.0564 Trace FindReachableObject<NLog.Layouts.Layout>:
+2019-03-13 15:31:51.0564 Trace Scanning FileTarget 'File Target[logfile]'
+2019-03-13 15:31:51.0564 Trace  Scanning Property FileName ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2019-03-13 15:31:51.0564 Trace  Scanning SimpleLayout ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt''
+2019-03-13 15:31:51.0564 Trace  Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2019-03-13 15:31:51.0564 Trace  Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-03-13 15:31:51.0564 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2019-03-13 15:31:51.0564 Trace  Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2019-03-13 15:31:51.0564 Trace File Target[logfile] has 2 layouts
+2019-03-13 15:31:51.0564 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2019-03-13 15:31:51.0959 Debug Watching path 'C:\Users\User\source\vscode-repos\izibongo.api' filter 'nlog.config' for changes.
+2019-03-13 15:32:12.1971 Debug Targets for izibongo.api.Logger.LoggerService by level:
+2019-03-13 15:32:12.1971 Debug Trace =>
+2019-03-13 15:32:12.1971 Debug Debug => logfile
+2019-03-13 15:32:12.1971 Debug Info => logfile
+2019-03-13 15:32:12.1971 Debug Warn => logfile
+2019-03-13 15:32:12.1971 Debug Error => logfile
+2019-03-13 15:32:12.1971 Debug Fatal => logfile
+2019-03-13 15:32:12.2244 Debug FileTarget(Name=logfile): Process file 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-13_logfile.txt' on startup
+2019-03-13 15:32:12.2345 Debug Creating file appender: C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-13_logfile.txt
+2019-03-13 15:32:12.2345 Trace Opening C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-13_logfile.txt with allowFileSharedWriting=False
+2019-03-13 15:33:11.4629 Trace Opening C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-13_logfile.txt with allowFileSharedWriting=False
+2019-03-13 15:35:07.6670 Trace Opening C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-13_logfile.txt with allowFileSharedWriting=False
+2019-03-13 15:59:20.2683 Info Shutting down logging...
+2019-03-13 15:59:20.2683 Debug Stopping file watching for path 'C:\Users\User\source\vscode-repos\izibongo.api' filter 'nlog.config'
+2019-03-13 15:59:20.2775 Trace Flushing all targets...
+2019-03-13 15:59:20.2775 Trace ForEachItemInParallel() 1 items
+2019-03-13 15:59:20.2775 Trace FileTarget(Name=logfile): FlushAsync
+2019-03-13 15:59:20.2775 Trace Continuation invoked: 
+2019-03-13 15:59:20.2775 Trace Parallel task completed. 0 items remaining
+2019-03-13 15:59:20.2775 Trace FileTarget(Name=logfile): FlushAsync Done
+2019-03-13 15:59:20.2775 Debug Targets for izibongo.api.Logger.LoggerService by level:
+2019-03-13 15:59:20.2921 Debug Trace =>
+2019-03-13 15:59:20.2921 Debug Debug =>
+2019-03-13 15:59:20.2921 Debug Info =>
+2019-03-13 15:59:20.2921 Debug Warn =>
+2019-03-13 15:59:20.2921 Debug Error =>
+2019-03-13 15:59:20.2921 Debug Fatal =>
+2019-03-13 15:59:20.2921 Debug Closing logging configuration...
+2019-03-13 15:59:20.2921 Trace Closing File Target[logfile]
+2019-03-13 15:59:20.2921 Debug Closing target 'File Target[logfile]'.
+2019-03-13 15:59:20.2921 Trace FileTarget(Name=logfile): FinalizeFile 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-13_logfile.txt, isArchiving: False'
+2019-03-13 15:59:20.3077 Debug FileAppender Closing Invalidate - C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-13_logfile.txt
+2019-03-13 15:59:20.3077 Debug Closed target 'File Target[logfile]'.
+2019-03-13 15:59:20.3077 Trace Closing 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'
+2019-03-13 15:59:20.3077 Trace Closing Layout Renderer: ${literal}
+2019-03-13 15:59:20.3077 Trace Closing Layout Renderer: ${shortdate}
+2019-03-13 15:59:20.3077 Trace Closing Layout Renderer: ${literal}
+2019-03-13 15:59:20.3077 Trace Closing '${longdate} ${level:uppercase=true} ${message}'
+2019-03-13 15:59:20.3077 Trace Closing Layout Renderer: ${longdate}
+2019-03-13 15:59:20.3077 Trace Closing Layout Renderer: ${literal}
+2019-03-13 15:59:20.3077 Trace Closing Layout Renderer: ${uppercase}
+2019-03-13 15:59:20.3077 Trace Closing SimpleLayout=Layout Renderer: ${level}
+2019-03-13 15:59:20.3077 Trace Closing Layout Renderer: ${level}
+2019-03-13 15:59:20.3077 Trace Closing Layout Renderer: ${literal}
+2019-03-13 15:59:20.3077 Trace Closing Layout Renderer: ${message}
+2019-03-13 15:59:20.3077 Debug Finished closing logging configuration.
+2019-03-13 15:59:20.3223 Info Logger has been shut down.
+2019-03-13 15:59:33.0272 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2019-03-13 15:59:33.1532 Debug Found assembly location directory: 'C:\Users\User\.nuget\packages\nlog\4.5.11\lib\netstandard2.0' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2019-03-13 15:59:33.1532 Debug Search for auto loading files in location: C:\Users\User\.nuget\packages\nlog\4.5.11\lib\netstandard2.0
+2019-03-13 15:59:33.1768 Debug Found assembly location directory: 'C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1' (izibongo.api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+2019-03-13 15:59:33.1768 Debug Search for auto loading files in location: C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1
+2019-03-13 15:59:33.1768 Debug Auto loading based on AppDomain-BaseDirectory found location: C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1
+2019-03-13 15:59:33.1768 Debug Search for auto loading files in location: C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1
+2019-03-13 15:59:33.1768 Debug Start auto loading, location: C:\Users\User\.nuget\packages\nlog\4.5.11\lib\netstandard2.0
+2019-03-13 15:59:33.1818 Trace Assembly 'Microsoft.Extensions.Logging, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2019-03-13 15:59:33.1818 Trace Assembly 'Microsoft.Extensions.Logging.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2019-03-13 15:59:33.1818 Debug Auto loading done
+2019-03-13 15:59:33.1818 Info Message Template Auto Format enabled
+2019-03-13 15:59:33.1818 Info Loading assembly: NLog.Extended
+2019-03-13 15:59:33.2541 Error Error loading extensions. Exception: System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'NLog.Extended, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark, IntPtr pPrivHostBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.XmlLoggingConfiguration.ParseExtensionWithAssembly(String assemblyName, String prefix)
+
+
+2019-03-13 15:59:33.2541 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Extended ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark, IntPtr pPrivHostBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.XmlLoggingConfiguration.ParseExtensionWithAssembly(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2019-03-13 15:59:33.2722 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 15:59:33.2787 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-13 15:59:33.2787 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2019-03-13 15:59:33.3131 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2019-03-13 15:59:33.3131 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 15:59:33.3131 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-13 15:59:33.3131 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 15:59:33.3131 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-13 15:59:33.3131 Trace  Scanning Property Culture '' System.Globalization
+2019-03-13 15:59:33.3131 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-13 15:59:33.3131 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-13 15:59:33.3131 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 15:59:33.3131 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-13 15:59:33.3231 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 15:59:33.3231 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2019-03-13 15:59:33.3231 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 15:59:33.3231 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-13 15:59:33.3410 Debug Setting 'FileTarget.name' to 'logfile'
+2019-03-13 15:59:33.3410 Debug Setting 'FileTarget.fileName' to 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'
+2019-03-13 15:59:33.3410 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 15:59:33.3410 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-03-13 15:59:33.3410 Debug Setting 'FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2019-03-13 15:59:33.3410 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 15:59:33.3410 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-13 15:59:33.3410 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2019-03-13 15:59:33.3410 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2019-03-13 15:59:33.3410 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 15:59:33.3410 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-13 15:59:33.3410 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 15:59:33.3410 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-13 15:59:33.3410 Trace  Scanning Property Culture '' System.Globalization
+2019-03-13 15:59:33.3410 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-13 15:59:33.3410 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-13 15:59:33.3410 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 15:59:33.3410 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-13 15:59:33.3410 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 15:59:33.3410 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-13 15:59:33.3533 Info Adding target File Target[logfile]
+2019-03-13 15:59:33.3533 Debug Registered target logfile: NLog.Targets.FileTarget
+2019-03-13 15:59:33.3533 Trace ParseRulesElement
+2019-03-13 15:59:33.3533 Info Configured from an XML element in C:\Users\User\source\vscode-repos\izibongo.api/nlog.config...
+2019-03-13 15:59:33.3705 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2019-03-13 15:59:33.3705 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2019-03-13 15:59:33.3705 Debug --- NLog configuration dump ---
+2019-03-13 15:59:33.3705 Debug Targets:
+2019-03-13 15:59:33.3705 Debug File Target[logfile]
+2019-03-13 15:59:33.3846 Debug Rules:
+2019-03-13 15:59:33.3846 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]
+2019-03-13 15:59:33.3846 Debug --- End of NLog configuration dump ---
+2019-03-13 15:59:33.3846 Trace FindReachableObject<System.Object>:
+2019-03-13 15:59:33.3846 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]'
+2019-03-13 15:59:33.3846 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2019-03-13 15:59:33.3846 Trace  Scanning FileTarget 'File Target[logfile]'
+2019-03-13 15:59:33.3846 Trace   Scanning Property FileName ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2019-03-13 15:59:33.3846 Trace   Scanning SimpleLayout ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt''
+2019-03-13 15:59:33.3846 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 15:59:33.3846 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 15:59:33.3846 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-03-13 15:59:33.3846 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 15:59:33.3846 Trace   Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2019-03-13 15:59:33.3846 Trace   Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-03-13 15:59:33.3846 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 15:59:33.4006 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-13 15:59:33.4006 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 15:59:33.4006 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-13 15:59:33.4006 Trace     Scanning Property Culture '' System.Globalization
+2019-03-13 15:59:33.4006 Trace     Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-13 15:59:33.4006 Trace     Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-13 15:59:33.4006 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 15:59:33.4006 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-13 15:59:33.4006 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 15:59:33.4006 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-13 15:59:33.4006 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2019-03-13 15:59:33.4006 Trace   Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2019-03-13 15:59:33.4006 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2019-03-13 15:59:33.4006 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2019-03-13 15:59:33.4006 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2019-03-13 15:59:33.4006 Info Found 14 configuration items
+2019-03-13 15:59:33.4006 Trace Initializing Layout Renderer: ${message}
+2019-03-13 15:59:33.4006 Trace Initializing Layout Renderer: ${literal}
+2019-03-13 15:59:33.4161 Trace Initializing Layout Renderer: ${level}
+2019-03-13 15:59:33.4161 Trace Initializing SimpleLayout=Layout Renderer: ${level}
+2019-03-13 15:59:33.4161 Trace FindReachableObject<System.Object>:
+2019-03-13 15:59:33.4161 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-13 15:59:33.4161 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 15:59:33.4161 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-13 15:59:33.4161 Trace Initializing Layout Renderer: ${uppercase}
+2019-03-13 15:59:33.4161 Trace Initializing Layout Renderer: ${literal}
+2019-03-13 15:59:33.4161 Trace Initializing Layout Renderer: ${longdate}
+2019-03-13 15:59:33.4161 Trace Initializing '${longdate} ${level:uppercase=true} ${message}'
+2019-03-13 15:59:33.4161 Trace FindReachableObject<System.Object>:
+2019-03-13 15:59:33.4161 Trace Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-03-13 15:59:33.4161 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 15:59:33.4161 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-13 15:59:33.4161 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 15:59:33.4315 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-13 15:59:33.4315 Trace   Scanning Property Culture '' System.Globalization
+2019-03-13 15:59:33.4315 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-13 15:59:33.4315 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-13 15:59:33.4315 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 15:59:33.4315 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-13 15:59:33.4315 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 15:59:33.4315 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-13 15:59:33.4315 Trace Initializing Layout Renderer: ${literal}
+2019-03-13 15:59:33.4315 Trace Initializing Layout Renderer: ${shortdate}
+2019-03-13 15:59:33.4315 Trace Initializing Layout Renderer: ${literal}
+2019-03-13 15:59:33.4315 Trace Initializing 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'
+2019-03-13 15:59:33.4315 Trace FindReachableObject<System.Object>:
+2019-03-13 15:59:33.4315 Trace Scanning SimpleLayout ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt''
+2019-03-13 15:59:33.4315 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 15:59:33.4315 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 15:59:33.4315 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-03-13 15:59:33.4315 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 15:59:33.4315 Trace Initializing File Target[logfile]
+2019-03-13 15:59:33.4315 Trace FindReachableObject<NLog.Layouts.Layout>:
+2019-03-13 15:59:33.4315 Trace Scanning FileTarget 'File Target[logfile]'
+2019-03-13 15:59:33.4315 Trace  Scanning Property FileName ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2019-03-13 15:59:33.4473 Trace  Scanning SimpleLayout ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt''
+2019-03-13 15:59:33.4473 Trace  Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2019-03-13 15:59:33.4473 Trace  Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-03-13 15:59:33.4473 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2019-03-13 15:59:33.4473 Trace  Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2019-03-13 15:59:33.4473 Trace File Target[logfile] has 2 layouts
+2019-03-13 15:59:33.4473 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2019-03-13 15:59:33.4473 Debug Watching path 'C:\Users\User\source\vscode-repos\izibongo.api' filter 'nlog.config' for changes.
+2019-03-13 16:32:47.8001 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2019-03-13 16:32:47.8815 Debug Found assembly location directory: 'C:\Users\User\.nuget\packages\nlog\4.5.11\lib\netstandard2.0' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2019-03-13 16:32:47.8893 Debug Search for auto loading files in location: C:\Users\User\.nuget\packages\nlog\4.5.11\lib\netstandard2.0
+2019-03-13 16:32:47.9022 Debug Found assembly location directory: 'C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1' (izibongo.api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+2019-03-13 16:32:47.9022 Debug Search for auto loading files in location: C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1
+2019-03-13 16:32:47.9022 Debug Auto loading based on AppDomain-BaseDirectory found location: C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1
+2019-03-13 16:32:47.9022 Debug Search for auto loading files in location: C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1
+2019-03-13 16:32:47.9022 Debug Start auto loading, location: C:\Users\User\.nuget\packages\nlog\4.5.11\lib\netstandard2.0
+2019-03-13 16:32:47.9022 Trace Assembly 'Microsoft.Extensions.Logging, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2019-03-13 16:32:47.9022 Trace Assembly 'Microsoft.Extensions.Logging.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2019-03-13 16:32:47.9022 Debug Auto loading done
+2019-03-13 16:32:47.9022 Info Message Template Auto Format enabled
+2019-03-13 16:32:47.9022 Info Loading assembly: NLog.Extended
+2019-03-13 16:32:47.9546 Error Error loading extensions. Exception: System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'NLog.Extended, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark, IntPtr pPrivHostBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.XmlLoggingConfiguration.ParseExtensionWithAssembly(String assemblyName, String prefix)
+
+
+2019-03-13 16:32:47.9546 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Extended ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark, IntPtr pPrivHostBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.XmlLoggingConfiguration.ParseExtensionWithAssembly(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2019-03-13 16:32:47.9697 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 16:32:47.9697 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-13 16:32:47.9804 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2019-03-13 16:32:48.0055 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2019-03-13 16:32:48.0055 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 16:32:48.0055 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-13 16:32:48.0055 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 16:32:48.0055 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-13 16:32:48.0055 Trace  Scanning Property Culture '' System.Globalization
+2019-03-13 16:32:48.0129 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-13 16:32:48.0129 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-13 16:32:48.0129 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 16:32:48.0129 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-13 16:32:48.0129 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 16:32:48.0129 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2019-03-13 16:32:48.0129 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 16:32:48.0129 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-13 16:32:48.0349 Debug Setting 'FileTarget.name' to 'logfile'
+2019-03-13 16:32:48.0349 Debug Setting 'FileTarget.fileName' to 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'
+2019-03-13 16:32:48.0349 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 16:32:48.0349 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-03-13 16:32:48.0349 Debug Setting 'FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2019-03-13 16:32:48.0349 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 16:32:48.0349 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-13 16:32:48.0349 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2019-03-13 16:32:48.0410 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2019-03-13 16:32:48.0410 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 16:32:48.0410 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-13 16:32:48.0410 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 16:32:48.0410 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-13 16:32:48.0410 Trace  Scanning Property Culture '' System.Globalization
+2019-03-13 16:32:48.0410 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-13 16:32:48.0410 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-13 16:32:48.0410 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 16:32:48.0410 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-13 16:32:48.0410 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 16:32:48.0410 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-13 16:32:48.0410 Info Adding target File Target[logfile]
+2019-03-13 16:32:48.0410 Debug Registered target logfile: NLog.Targets.FileTarget
+2019-03-13 16:32:48.0410 Trace ParseRulesElement
+2019-03-13 16:32:48.0583 Info Configured from an XML element in C:\Users\User\source\vscode-repos\izibongo.api/nlog.config...
+2019-03-13 16:32:48.0583 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2019-03-13 16:32:48.0735 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2019-03-13 16:32:48.0735 Debug --- NLog configuration dump ---
+2019-03-13 16:32:48.0735 Debug Targets:
+2019-03-13 16:32:48.0735 Debug File Target[logfile]
+2019-03-13 16:32:48.0735 Debug Rules:
+2019-03-13 16:32:48.0735 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]
+2019-03-13 16:32:48.0735 Debug --- End of NLog configuration dump ---
+2019-03-13 16:32:48.0735 Trace FindReachableObject<System.Object>:
+2019-03-13 16:32:48.0735 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]'
+2019-03-13 16:32:48.0735 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2019-03-13 16:32:48.0735 Trace  Scanning FileTarget 'File Target[logfile]'
+2019-03-13 16:32:48.0887 Trace   Scanning Property FileName ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2019-03-13 16:32:48.0887 Trace   Scanning SimpleLayout ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt''
+2019-03-13 16:32:48.0887 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 16:32:48.0887 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 16:32:48.0887 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-03-13 16:32:48.0887 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 16:32:48.0887 Trace   Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2019-03-13 16:32:48.0887 Trace   Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-03-13 16:32:48.0887 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 16:32:48.0887 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-13 16:32:48.0887 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 16:32:48.0887 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-13 16:32:48.0887 Trace     Scanning Property Culture '' System.Globalization
+2019-03-13 16:32:48.0887 Trace     Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-13 16:32:48.0887 Trace     Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-13 16:32:48.0887 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 16:32:48.0887 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-13 16:32:48.0887 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 16:32:48.0887 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-13 16:32:48.0887 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2019-03-13 16:32:48.0887 Trace   Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2019-03-13 16:32:48.0887 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2019-03-13 16:32:48.0887 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2019-03-13 16:32:48.0887 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2019-03-13 16:32:48.0887 Info Found 14 configuration items
+2019-03-13 16:32:48.1043 Trace Initializing Layout Renderer: ${message}
+2019-03-13 16:32:48.1043 Trace Initializing Layout Renderer: ${literal}
+2019-03-13 16:32:48.1043 Trace Initializing Layout Renderer: ${level}
+2019-03-13 16:32:48.1043 Trace Initializing SimpleLayout=Layout Renderer: ${level}
+2019-03-13 16:32:48.1043 Trace FindReachableObject<System.Object>:
+2019-03-13 16:32:48.1043 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-13 16:32:48.1043 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 16:32:48.1043 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-13 16:32:48.1043 Trace Initializing Layout Renderer: ${uppercase}
+2019-03-13 16:32:48.1043 Trace Initializing Layout Renderer: ${literal}
+2019-03-13 16:32:48.1043 Trace Initializing Layout Renderer: ${longdate}
+2019-03-13 16:32:48.1043 Trace Initializing '${longdate} ${level:uppercase=true} ${message}'
+2019-03-13 16:32:48.1043 Trace FindReachableObject<System.Object>:
+2019-03-13 16:32:48.1043 Trace Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-03-13 16:32:48.1043 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 16:32:48.1190 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-13 16:32:48.1190 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 16:32:48.1190 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-13 16:32:48.1190 Trace   Scanning Property Culture '' System.Globalization
+2019-03-13 16:32:48.1190 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-13 16:32:48.1190 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-13 16:32:48.1190 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 16:32:48.1190 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-13 16:32:48.1190 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 16:32:48.1190 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-13 16:32:48.1190 Trace Initializing Layout Renderer: ${literal}
+2019-03-13 16:32:48.1190 Trace Initializing Layout Renderer: ${shortdate}
+2019-03-13 16:32:48.1190 Trace Initializing Layout Renderer: ${literal}
+2019-03-13 16:32:48.1190 Trace Initializing 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'
+2019-03-13 16:32:48.1190 Trace FindReachableObject<System.Object>:
+2019-03-13 16:32:48.1190 Trace Scanning SimpleLayout ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt''
+2019-03-13 16:32:48.1190 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 16:32:48.1190 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 16:32:48.1190 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-03-13 16:32:48.1190 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 16:32:48.1190 Trace Initializing File Target[logfile]
+2019-03-13 16:32:48.1365 Trace FindReachableObject<NLog.Layouts.Layout>:
+2019-03-13 16:32:48.1365 Trace Scanning FileTarget 'File Target[logfile]'
+2019-03-13 16:32:48.1365 Trace  Scanning Property FileName ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2019-03-13 16:32:48.1365 Trace  Scanning SimpleLayout ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt''
+2019-03-13 16:32:48.1365 Trace  Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2019-03-13 16:32:48.1365 Trace  Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-03-13 16:32:48.1365 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2019-03-13 16:32:48.1365 Trace  Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2019-03-13 16:32:48.1365 Trace File Target[logfile] has 2 layouts
+2019-03-13 16:32:48.1365 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2019-03-13 16:32:48.1528 Debug Watching path 'C:\Users\User\source\vscode-repos\izibongo.api' filter 'nlog.config' for changes.
+2019-03-13 16:38:47.0888 Debug Targets for izibongo.api.Logger.LoggerService by level:
+2019-03-13 16:38:47.0888 Debug Trace =>
+2019-03-13 16:38:47.0888 Debug Debug => logfile
+2019-03-13 16:38:47.1053 Debug Info => logfile
+2019-03-13 16:38:47.1053 Debug Warn => logfile
+2019-03-13 16:38:47.1053 Debug Error => logfile
+2019-03-13 16:38:47.1053 Debug Fatal => logfile
+2019-03-13 16:38:47.1484 Debug FileTarget(Name=logfile): Process file 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-13_logfile.txt' on startup
+2019-03-13 16:38:47.1605 Debug Creating file appender: C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-13_logfile.txt
+2019-03-13 16:38:47.1662 Trace Opening C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-13_logfile.txt with allowFileSharedWriting=False
+2019-03-13 16:42:15.9922 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2019-03-13 16:42:16.0199 Debug Found assembly location directory: 'C:\Users\User\.nuget\packages\nlog\4.5.11\lib\netstandard2.0' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2019-03-13 16:42:16.0199 Debug Search for auto loading files in location: C:\Users\User\.nuget\packages\nlog\4.5.11\lib\netstandard2.0
+2019-03-13 16:42:16.0274 Debug Found assembly location directory: 'C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1' (izibongo.api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+2019-03-13 16:42:16.0274 Debug Search for auto loading files in location: C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1
+2019-03-13 16:42:16.0274 Debug Auto loading based on AppDomain-BaseDirectory found location: C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1
+2019-03-13 16:42:16.0274 Debug Search for auto loading files in location: C:\Users\User\source\vscode-repos\izibongo.api\bin\Debug\netcoreapp2.1
+2019-03-13 16:42:16.0274 Debug Start auto loading, location: C:\Users\User\.nuget\packages\nlog\4.5.11\lib\netstandard2.0
+2019-03-13 16:42:16.0274 Trace Assembly 'Microsoft.Extensions.Logging, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2019-03-13 16:42:16.0274 Trace Assembly 'Microsoft.Extensions.Logging.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2019-03-13 16:42:16.0274 Debug Auto loading done
+2019-03-13 16:42:16.0274 Info Message Template Auto Format enabled
+2019-03-13 16:42:16.0449 Info Loading assembly: NLog.Extended
+2019-03-13 16:42:16.0688 Error Error loading extensions. Exception: System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'NLog.Extended, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark, IntPtr pPrivHostBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.XmlLoggingConfiguration.ParseExtensionWithAssembly(String assemblyName, String prefix)
+
+
+2019-03-13 16:42:16.0688 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Extended ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark, IntPtr pPrivHostBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.XmlLoggingConfiguration.ParseExtensionWithAssembly(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2019-03-13 16:42:16.0851 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 16:42:16.0897 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-13 16:42:16.0897 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2019-03-13 16:42:16.0897 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2019-03-13 16:42:16.1036 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 16:42:16.1036 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-13 16:42:16.1036 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 16:42:16.1036 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-13 16:42:16.1036 Trace  Scanning Property Culture '' System.Globalization
+2019-03-13 16:42:16.1036 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-13 16:42:16.1036 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-13 16:42:16.1036 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 16:42:16.1036 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-13 16:42:16.1036 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 16:42:16.1036 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2019-03-13 16:42:16.1036 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 16:42:16.1036 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-13 16:42:16.1229 Debug Setting 'FileTarget.name' to 'logfile'
+2019-03-13 16:42:16.1229 Debug Setting 'FileTarget.fileName' to 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'
+2019-03-13 16:42:16.1229 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 16:42:16.1229 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-03-13 16:42:16.1229 Debug Setting 'FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2019-03-13 16:42:16.1229 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 16:42:16.1229 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-13 16:42:16.1229 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2019-03-13 16:42:16.1229 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2019-03-13 16:42:16.1229 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 16:42:16.1229 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-13 16:42:16.1229 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 16:42:16.1229 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-13 16:42:16.1229 Trace  Scanning Property Culture '' System.Globalization
+2019-03-13 16:42:16.1229 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-13 16:42:16.1229 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-13 16:42:16.1346 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 16:42:16.1346 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-13 16:42:16.1346 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-03-13 16:42:16.1346 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-13 16:42:16.1346 Info Adding target File Target[logfile]
+2019-03-13 16:42:16.1346 Debug Registered target logfile: NLog.Targets.FileTarget
+2019-03-13 16:42:16.1346 Trace ParseRulesElement
+2019-03-13 16:42:16.1346 Info Configured from an XML element in C:\Users\User\source\vscode-repos\izibongo.api/nlog.config...
+2019-03-13 16:42:16.1544 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2019-03-13 16:42:16.1544 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2019-03-13 16:42:16.1544 Debug --- NLog configuration dump ---
+2019-03-13 16:42:16.1544 Debug Targets:
+2019-03-13 16:42:16.1544 Debug File Target[logfile]
+2019-03-13 16:42:16.1544 Debug Rules:
+2019-03-13 16:42:16.1667 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]
+2019-03-13 16:42:16.1667 Debug --- End of NLog configuration dump ---
+2019-03-13 16:42:16.1667 Trace FindReachableObject<System.Object>:
+2019-03-13 16:42:16.1667 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]'
+2019-03-13 16:42:16.1667 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2019-03-13 16:42:16.1667 Trace  Scanning FileTarget 'File Target[logfile]'
+2019-03-13 16:42:16.1667 Trace   Scanning Property FileName ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2019-03-13 16:42:16.1667 Trace   Scanning SimpleLayout ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt''
+2019-03-13 16:42:16.1667 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 16:42:16.1667 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 16:42:16.1667 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-03-13 16:42:16.1667 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 16:42:16.1667 Trace   Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2019-03-13 16:42:16.1667 Trace   Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-03-13 16:42:16.1667 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 16:42:16.1667 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-13 16:42:16.1667 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 16:42:16.1667 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-13 16:42:16.1667 Trace     Scanning Property Culture '' System.Globalization
+2019-03-13 16:42:16.1814 Trace     Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-13 16:42:16.1814 Trace     Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-13 16:42:16.1814 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 16:42:16.1814 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-13 16:42:16.1814 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 16:42:16.1814 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-13 16:42:16.1814 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2019-03-13 16:42:16.1814 Trace   Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2019-03-13 16:42:16.1814 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2019-03-13 16:42:16.1814 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2019-03-13 16:42:16.1814 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2019-03-13 16:42:16.1814 Info Found 14 configuration items
+2019-03-13 16:42:16.1814 Trace Initializing Layout Renderer: ${message}
+2019-03-13 16:42:16.1814 Trace Initializing Layout Renderer: ${literal}
+2019-03-13 16:42:16.1814 Trace Initializing Layout Renderer: ${level}
+2019-03-13 16:42:16.1814 Trace Initializing SimpleLayout=Layout Renderer: ${level}
+2019-03-13 16:42:16.1814 Trace FindReachableObject<System.Object>:
+2019-03-13 16:42:16.1814 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-13 16:42:16.1970 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 16:42:16.1970 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-13 16:42:16.1970 Trace Initializing Layout Renderer: ${uppercase}
+2019-03-13 16:42:16.1970 Trace Initializing Layout Renderer: ${literal}
+2019-03-13 16:42:16.1970 Trace Initializing Layout Renderer: ${longdate}
+2019-03-13 16:42:16.1970 Trace Initializing '${longdate} ${level:uppercase=true} ${message}'
+2019-03-13 16:42:16.1970 Trace FindReachableObject<System.Object>:
+2019-03-13 16:42:16.1970 Trace Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-03-13 16:42:16.1970 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 16:42:16.1970 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-03-13 16:42:16.1970 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 16:42:16.1970 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-03-13 16:42:16.1970 Trace   Scanning Property Culture '' System.Globalization
+2019-03-13 16:42:16.1970 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-03-13 16:42:16.1970 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-03-13 16:42:16.1970 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 16:42:16.1970 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-03-13 16:42:16.1970 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 16:42:16.1970 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-03-13 16:42:16.1970 Trace Initializing Layout Renderer: ${literal}
+2019-03-13 16:42:16.1970 Trace Initializing Layout Renderer: ${shortdate}
+2019-03-13 16:42:16.1970 Trace Initializing Layout Renderer: ${literal}
+2019-03-13 16:42:16.2130 Trace Initializing 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'
+2019-03-13 16:42:16.2130 Trace FindReachableObject<System.Object>:
+2019-03-13 16:42:16.2130 Trace Scanning SimpleLayout ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt''
+2019-03-13 16:42:16.2130 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-03-13 16:42:16.2130 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 16:42:16.2130 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-03-13 16:42:16.2130 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-03-13 16:42:16.2130 Trace Initializing File Target[logfile]
+2019-03-13 16:42:16.2130 Trace FindReachableObject<NLog.Layouts.Layout>:
+2019-03-13 16:42:16.2130 Trace Scanning FileTarget 'File Target[logfile]'
+2019-03-13 16:42:16.2130 Trace  Scanning Property FileName ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2019-03-13 16:42:16.2130 Trace  Scanning SimpleLayout ''C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt''
+2019-03-13 16:42:16.2130 Trace  Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2019-03-13 16:42:16.2130 Trace  Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-03-13 16:42:16.2130 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2019-03-13 16:42:16.2130 Trace  Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2019-03-13 16:42:16.2130 Trace File Target[logfile] has 2 layouts
+2019-03-13 16:42:16.2130 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2019-03-13 16:42:16.2363 Debug Watching path 'C:\Users\User\source\vscode-repos\izibongo.api' filter 'nlog.config' for changes.
+2019-03-13 16:42:38.5748 Debug Targets for izibongo.api.Logger.LoggerService by level:
+2019-03-13 16:42:38.5748 Debug Trace =>
+2019-03-13 16:42:38.5748 Debug Debug => logfile
+2019-03-13 16:42:38.5748 Debug Info => logfile
+2019-03-13 16:42:38.5748 Debug Warn => logfile
+2019-03-13 16:42:38.5748 Debug Error => logfile
+2019-03-13 16:42:38.5748 Debug Fatal => logfile
+2019-03-13 16:42:38.6040 Debug FileTarget(Name=logfile): Process file 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-13_logfile.txt' on startup
+2019-03-13 16:42:38.6040 Debug Creating file appender: C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-13_logfile.txt
+2019-03-13 16:42:38.6040 Trace Opening C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-13_logfile.txt with allowFileSharedWriting=False
+2019-03-13 16:45:54.9233 Info Shutting down logging...
+2019-03-13 16:45:54.9233 Debug Stopping file watching for path 'C:\Users\User\source\vscode-repos\izibongo.api' filter 'nlog.config'
+2019-03-13 16:45:54.9233 Trace Flushing all targets...
+2019-03-13 16:45:54.9337 Trace ForEachItemInParallel() 1 items
+2019-03-13 16:45:54.9337 Trace FileTarget(Name=logfile): FlushAsync
+2019-03-13 16:45:54.9337 Trace Continuation invoked: 
+2019-03-13 16:45:54.9337 Trace Parallel task completed. 0 items remaining
+2019-03-13 16:45:54.9337 Trace FileTarget(Name=logfile): FlushAsync Done
+2019-03-13 16:45:54.9337 Debug Targets for izibongo.api.Logger.LoggerService by level:
+2019-03-13 16:45:54.9337 Debug Trace =>
+2019-03-13 16:45:54.9337 Debug Debug =>
+2019-03-13 16:45:54.9337 Debug Info =>
+2019-03-13 16:45:54.9337 Debug Warn =>
+2019-03-13 16:45:54.9337 Debug Error =>
+2019-03-13 16:45:54.9337 Debug Fatal =>
+2019-03-13 16:45:54.9468 Debug Closing logging configuration...
+2019-03-13 16:45:54.9468 Trace Closing File Target[logfile]
+2019-03-13 16:45:54.9468 Debug Closing target 'File Target[logfile]'.
+2019-03-13 16:45:54.9468 Trace FileTarget(Name=logfile): FinalizeFile 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-13_logfile.txt, isArchiving: False'
+2019-03-13 16:45:54.9468 Debug FileAppender Closing Invalidate - C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/2019-03-13_logfile.txt
+2019-03-13 16:45:54.9468 Debug Closed target 'File Target[logfile]'.
+2019-03-13 16:45:54.9468 Trace Closing 'C:/Users/User/source/vscode-repos/izibongo.api/Logging/logs/${shortdate}_logfile.txt'
+2019-03-13 16:45:54.9468 Trace Closing Layout Renderer: ${literal}
+2019-03-13 16:45:54.9633 Trace Closing Layout Renderer: ${shortdate}
+2019-03-13 16:45:54.9633 Trace Closing Layout Renderer: ${literal}
+2019-03-13 16:45:54.9633 Trace Closing '${longdate} ${level:uppercase=true} ${message}'
+2019-03-13 16:45:54.9633 Trace Closing Layout Renderer: ${longdate}
+2019-03-13 16:45:54.9633 Trace Closing Layout Renderer: ${literal}
+2019-03-13 16:45:54.9633 Trace Closing Layout Renderer: ${uppercase}
+2019-03-13 16:45:54.9633 Trace Closing SimpleLayout=Layout Renderer: ${level}
+2019-03-13 16:45:54.9633 Trace Closing Layout Renderer: ${level}
+2019-03-13 16:45:54.9633 Trace Closing Layout Renderer: ${literal}
+2019-03-13 16:45:54.9633 Trace Closing Layout Renderer: ${message}
+2019-03-13 16:45:54.9633 Debug Finished closing logging configuration.
+2019-03-13 16:45:54.9633 Info Logger has been shut down.

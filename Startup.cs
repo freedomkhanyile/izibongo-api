@@ -53,6 +53,7 @@ namespace izibongo.api
             services.ConfigureLoggerService();
             services.AddTransient<DbInitializer>();
             services.AddAutoMapper();
+            services.ConfigureCookies();
             services.AddMvc(opt =>
             {
                 opt.ReturnHttpNotAcceptable = true;
