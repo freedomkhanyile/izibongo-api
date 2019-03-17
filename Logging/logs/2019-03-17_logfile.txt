@@ -1,0 +1,6 @@
+2019-03-17 19:56:28.7058 INFO Username adminIzibongo, was successfully authenticated
+2019-03-17 20:11:22.2662 INFO Username adminIzibongo, was successfully authenticated
+2019-03-17 20:11:58.1289 INFO Username adminIzibongo, was successfully authenticated
+2019-03-17 20:59:48.1819 ERROR Username sadf, was not successully authenticated at 2019/03/17 8:59:48 PM
+2019-03-17 21:01:14.1146 INFO Username adminIzibongo, was successfully authenticated
+2019-03-17 21:01:46.0034 INFO Username adminIzibongo, was successfully authenticated

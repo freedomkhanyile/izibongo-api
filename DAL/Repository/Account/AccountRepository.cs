@@ -65,6 +65,7 @@ namespace izibongo.api.DAL.Repository.Account
 
                 var response = new TokenResponse();
                 response.Token = new JwtSecurityTokenHandler().WriteToken(token);
+                response.UserName = model.UserName;
                 return response;
             }
 
